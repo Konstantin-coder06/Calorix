@@ -1,0 +1,9 @@
+﻿  Calorix.cpp
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(11,91): error C2143: syntax error: missing ')' before ';'
+  User.cpp
+D:\Calorix\CalorixProject\CalorixProject\User.cpp(6,1): error C2512: 'UserProfile': no appropriate default constructor available
+      D:\Calorix\CalorixProject\CalorixProject\UserProfile.h(9,7):
+      see declaration of 'UserProfile'
+  
+  UserProfile.cpp
+  Generating Code...

@@ -1,0 +1,31 @@
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+
+# Build folders
+Debug/
+Release/
+x64/
+x86/
+
+# Compiled files
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.dll
+*.exp
+
+# User-specific files
+*.user
+*.suo
+
+# CMake (ако ползваш)
+out/
+build/
+
+# Temporary
+*.log
+*.tmp

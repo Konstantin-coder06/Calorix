@@ -8,8 +8,11 @@ class User {
 	std::string password;
 	UserProfile profile;
 public:
-	void registerUser(std::string username, std::string password, int age, double weight, double height, bool genre);
-	void login(std::string username, std::string password);
-	void logout();
+	User(const std::string username, const std::string password, UserProfile profile);
+	User() = default;
+
 	void help();
+
+	std::string getName();
+	std::string getPassword();
 };
