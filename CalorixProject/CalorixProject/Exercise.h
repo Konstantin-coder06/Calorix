@@ -7,4 +7,9 @@ class Exercise {
 	std::string name;
 	double caloriesBurnedPerHour;
 	MuscleGroup muscleGroup;
+public:
+	Exercise() = default;
+	Exercise(std::string name, double calBurn,MuscleGroup muscle);
+	Exercise(const Exercise& other) = default;
+	Exercise& operator=(const Exercise& other) = default;
 };

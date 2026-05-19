@@ -5,17 +5,19 @@
 #include "FoodEntry.h"
 #include "ExerciseEntry.h"
 #include "FitnessGoal.h"
+#include "Date.h"
+#include "Food.h"
 
 class Trainee : public User
 {
 	std::vector<FoodEntry> foodDiary;
 	std::vector<ExerciseEntry> exerciseDiary;
-	FitnessGoal goals;
+	std::vector<FitnessGoal> goals;
 	std::vector<Exercise> favoriteExercises;
 public:
-	void setGoals(GoalType goalType, int targetValue, std::string deadline);
+	void setGoals(GoalType goalType, int targetValue, Date deadline);
 	void logFood(Food foodName, double quantityGrams);
-	void logExercise(ExerciseEntry exerciseName, double durationMinutes);
+	void logExercise(Exercise exerciseName, double durationMinutes);
 	void viewDailySummery();
 	void viewProgress();
 	double calculateBMI();
