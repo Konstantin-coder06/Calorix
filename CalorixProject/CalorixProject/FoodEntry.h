@@ -11,7 +11,8 @@ class FoodEntry {
 public:
 	FoodEntry(Food& food, double quantityGrams);
 	FoodEntry() = default;
-
+	Food& getFood();
+	double getQuantityGrams();
 	FoodEntry(Food& food, double quantityGrams,Date date);
 	bool isValidQuantity(double quantity);
 };

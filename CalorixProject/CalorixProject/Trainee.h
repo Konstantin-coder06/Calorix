@@ -15,13 +15,15 @@ class Trainee : public User
 	std::vector<FitnessGoal> goals;
 	std::vector<Exercise> favoriteExercises;
 public:
+	Trainee(std::vector<FoodEntry> foodDiary, std::vector<ExerciseEntry> exerciseDiary, std::vector<FitnessGoal> goals, std::vector<Exercise> favoriteExercises);
+	Trainee() = default;
 	void setGoals(GoalType goalType, int targetValue, Date deadline);
 	void logFood(Food foodName, double quantityGrams);
 	void logExercise(Exercise exerciseName, double durationMinutes);
 	void viewDailySummery();
 	void viewProgress();
-	double calculateBMI();
-	double calculateBMR();
+	void calculateBMI();
+	void calculateBMR();
 	void generateWorkoutPlan(double durationMinutes);
 	void addToFavorites(Exercise exerciseName);
 	void viewFavorites();

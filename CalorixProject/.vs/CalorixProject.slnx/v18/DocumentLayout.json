@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "D:\\Calorix\\CalorixProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Trainee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Trainee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Trainee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Trainee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\UserProfile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\UserProfile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\FitnessGoal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\FitnessGoal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\FitnessGoal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\FitnessGoal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Food.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Food.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Food.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Food.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,16 +47,12 @@
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\FoodEntry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Trainee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Trainee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Trainee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Trainee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\FoodEntry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Calorix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Calorix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,14 +63,6 @@
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\ExerciseEntry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\FitnessGoal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\FitnessGoal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\FitnessGoal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\FitnessGoal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Exercise.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -47,20 +71,8 @@
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Exercise.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Food.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Food.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Date.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Date.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\UserProfile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\MuscleGroup.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -83,18 +95,6 @@
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\Calorix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\Calorix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\UserProfile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|D:\\Calorix\\CalorixProject\\CalorixProject\\CalorixProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E39F0593-9A1A-498F-B2FE-9B34CA4952BD}|CalorixProject\\CalorixProject.vcxproj|solutionrelative:CalorixProject\\CalorixProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -106,17 +106,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 4,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Trainee.h",
               "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Trainee.h",
               "RelativeDocumentMoniker": "CalorixProject\\Trainee.h",
               "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Trainee.h",
               "RelativeToolTip": "CalorixProject\\Trainee.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-09T19:33:16.25Z",
               "IsPinned": true,
@@ -124,13 +124,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Trainee.cpp",
               "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Trainee.cpp",
               "RelativeDocumentMoniker": "CalorixProject\\Trainee.cpp",
               "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Trainee.cpp",
               "RelativeToolTip": "CalorixProject\\Trainee.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-19T11:02:59.428Z",
               "IsPinned": true,
@@ -144,7 +144,7 @@
               "RelativeDocumentMoniker": "CalorixProject\\FitnessGoal.h",
               "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\FitnessGoal.h",
               "RelativeToolTip": "CalorixProject\\FitnessGoal.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-10T16:08:59.72Z",
               "IsPinned": true,
@@ -152,13 +152,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "FitnessGoal.cpp",
               "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\FitnessGoal.cpp",
               "RelativeDocumentMoniker": "CalorixProject\\FitnessGoal.cpp",
               "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\FitnessGoal.cpp",
               "RelativeToolTip": "CalorixProject\\FitnessGoal.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-19T11:06:04.706Z",
               "IsPinned": true,
@@ -170,215 +170,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FoodEntry.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.h",
-              "RelativeDocumentMoniker": "CalorixProject\\FoodEntry.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.h",
-              "RelativeToolTip": "CalorixProject\\FoodEntry.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-10T16:01:40.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ExerciseEntry.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.h",
-              "RelativeDocumentMoniker": "CalorixProject\\ExerciseEntry.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.h",
-              "RelativeToolTip": "CalorixProject\\ExerciseEntry.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-10T16:07:37.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ExerciseEntry.cpp",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.cpp",
-              "RelativeDocumentMoniker": "CalorixProject\\ExerciseEntry.cpp",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.cpp",
-              "RelativeToolTip": "CalorixProject\\ExerciseEntry.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-19T11:46:46.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FoodEntry.cpp",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.cpp",
-              "RelativeDocumentMoniker": "CalorixProject\\FoodEntry.cpp",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.cpp",
-              "RelativeToolTip": "CalorixProject\\FoodEntry.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-19T11:38:30.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Food.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Food.h",
-              "RelativeDocumentMoniker": "CalorixProject\\Food.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Food.h",
-              "RelativeToolTip": "CalorixProject\\Food.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-10T15:59:33.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Exercise.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.h",
-              "RelativeDocumentMoniker": "CalorixProject\\Exercise.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.h",
-              "RelativeToolTip": "CalorixProject\\Exercise.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-10T16:03:08.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Exercise.cpp",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.cpp",
-              "RelativeDocumentMoniker": "CalorixProject\\Exercise.cpp",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.cpp",
-              "RelativeToolTip": "CalorixProject\\Exercise.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-19T11:49:40.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "Food.cpp",
               "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Food.cpp",
               "RelativeDocumentMoniker": "CalorixProject\\Food.cpp",
               "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Food.cpp",
               "RelativeToolTip": "CalorixProject\\Food.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAhwBcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-19T11:43:27.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Date.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Date.h",
-              "RelativeDocumentMoniker": "CalorixProject\\Date.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Date.h",
-              "RelativeToolTip": "CalorixProject\\Date.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-19T11:09:19.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserProfile.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.h",
-              "RelativeDocumentMoniker": "CalorixProject\\UserProfile.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.h",
-              "RelativeToolTip": "CalorixProject\\UserProfile.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-09T19:33:16.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "User.h",
               "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\User.h",
               "RelativeDocumentMoniker": "CalorixProject\\User.h",
               "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\User.h",
               "RelativeToolTip": "CalorixProject\\User.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-09T19:33:14.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MuscleGroup.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\MuscleGroup.h",
-              "RelativeDocumentMoniker": "CalorixProject\\MuscleGroup.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\MuscleGroup.h",
-              "RelativeToolTip": "CalorixProject\\MuscleGroup.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserProfile.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.h",
+              "RelativeDocumentMoniker": "CalorixProject\\UserProfile.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.h",
+              "RelativeToolTip": "CalorixProject\\UserProfile.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-10T16:06:51.623Z",
+              "WhenOpened": "2026-05-09T19:33:16.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GoalType.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\GoalType.h",
-              "RelativeDocumentMoniker": "CalorixProject\\GoalType.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\GoalType.h",
-              "RelativeToolTip": "CalorixProject\\GoalType.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-10T16:10:10.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Calorix.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Calorix.h",
-              "RelativeDocumentMoniker": "CalorixProject\\Calorix.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Calorix.h",
-              "RelativeToolTip": "CalorixProject\\Calorix.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-10T16:12:23.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Admin.h",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Admin.h",
-              "RelativeDocumentMoniker": "CalorixProject\\Admin.h",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Admin.h",
-              "RelativeToolTip": "CalorixProject\\Admin.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-10T15:55:08.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Date.cpp",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Date.cpp",
-              "RelativeDocumentMoniker": "CalorixProject\\Date.cpp",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Date.cpp",
-              "RelativeToolTip": "CalorixProject\\Date.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "User.cpp",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\User.cpp",
+              "RelativeDocumentMoniker": "CalorixProject\\User.cpp",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\User.cpp",
+              "RelativeToolTip": "CalorixProject\\User.cpp",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAhwCIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-19T11:16:40.946Z",
+              "WhenOpened": "2026-05-09T19:33:16.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 2,
+              "Title": "UserProfile.cpp",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.cpp",
+              "RelativeDocumentMoniker": "CalorixProject\\UserProfile.cpp",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.cpp",
+              "RelativeToolTip": "CalorixProject\\UserProfile.cpp",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAhwBwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-11T09:19:47.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Food.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Food.h",
+              "RelativeDocumentMoniker": "CalorixProject\\Food.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Food.h",
+              "RelativeToolTip": "CalorixProject\\Food.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T15:59:33.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FoodEntry.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.h",
+              "RelativeDocumentMoniker": "CalorixProject\\FoodEntry.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.h",
+              "RelativeToolTip": "CalorixProject\\FoodEntry.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T16:01:40.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FoodEntry.cpp",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.cpp",
+              "RelativeDocumentMoniker": "CalorixProject\\FoodEntry.cpp",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\FoodEntry.cpp",
+              "RelativeToolTip": "CalorixProject\\FoodEntry.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-19T11:38:30.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Calorix.cpp",
               "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Calorix.cpp",
               "RelativeDocumentMoniker": "CalorixProject\\Calorix.cpp",
@@ -391,28 +287,123 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserProfile.cpp",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.cpp",
-              "RelativeDocumentMoniker": "CalorixProject\\UserProfile.cpp",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\UserProfile.cpp",
-              "RelativeToolTip": "CalorixProject\\UserProfile.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "ExerciseEntry.cpp",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.cpp",
+              "RelativeDocumentMoniker": "CalorixProject\\ExerciseEntry.cpp",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.cpp",
+              "RelativeToolTip": "CalorixProject\\ExerciseEntry.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-11T09:19:47.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T11:46:46.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExerciseEntry.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.h",
+              "RelativeDocumentMoniker": "CalorixProject\\ExerciseEntry.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\ExerciseEntry.h",
+              "RelativeToolTip": "CalorixProject\\ExerciseEntry.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T16:07:37.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Exercise.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.h",
+              "RelativeDocumentMoniker": "CalorixProject\\Exercise.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.h",
+              "RelativeToolTip": "CalorixProject\\Exercise.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T16:03:08.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Exercise.cpp",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.cpp",
+              "RelativeDocumentMoniker": "CalorixProject\\Exercise.cpp",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Exercise.cpp",
+              "RelativeToolTip": "CalorixProject\\Exercise.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-19T11:49:40.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Date.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Date.h",
+              "RelativeDocumentMoniker": "CalorixProject\\Date.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Date.h",
+              "RelativeToolTip": "CalorixProject\\Date.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-19T11:09:19.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MuscleGroup.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\MuscleGroup.h",
+              "RelativeDocumentMoniker": "CalorixProject\\MuscleGroup.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\MuscleGroup.h",
+              "RelativeToolTip": "CalorixProject\\MuscleGroup.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T16:06:51.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GoalType.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\GoalType.h",
+              "RelativeDocumentMoniker": "CalorixProject\\GoalType.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\GoalType.h",
+              "RelativeToolTip": "CalorixProject\\GoalType.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T16:10:10.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Calorix.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Calorix.h",
+              "RelativeDocumentMoniker": "CalorixProject\\Calorix.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Calorix.h",
+              "RelativeToolTip": "CalorixProject\\Calorix.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T16:12:23.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Admin.h",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Admin.h",
+              "RelativeDocumentMoniker": "CalorixProject\\Admin.h",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Admin.h",
+              "RelativeToolTip": "CalorixProject\\Admin.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-10T15:55:08.145Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "User.cpp",
-              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\User.cpp",
-              "RelativeDocumentMoniker": "CalorixProject\\User.cpp",
-              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\User.cpp",
-              "RelativeToolTip": "CalorixProject\\User.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Title": "Date.cpp",
+              "DocumentMoniker": "D:\\Calorix\\CalorixProject\\CalorixProject\\Date.cpp",
+              "RelativeDocumentMoniker": "CalorixProject\\Date.cpp",
+              "ToolTip": "D:\\Calorix\\CalorixProject\\CalorixProject\\Date.cpp",
+              "RelativeToolTip": "CalorixProject\\Date.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-09T19:33:16.212Z"
+              "WhenOpened": "2026-05-19T11:16:40.946Z"
             },
             {
               "$type": "Document",

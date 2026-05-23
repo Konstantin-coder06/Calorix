@@ -29,3 +29,8 @@ std::string User::getPassword()
 {
 	return password;
 }
+
+UserProfile User::getProfile()
+{
+	return profile;
+}

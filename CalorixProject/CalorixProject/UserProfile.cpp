@@ -9,4 +9,25 @@ UserProfile::UserProfile(int age, double weight, double height, bool gender)
 	this->activityLevel = Activity::Sedentary;
 }
 
+double UserProfile::getWeight()
+{
+	return weight;
+}
+
+double UserProfile::getHeight()
+{
+	return height;
+}
+
+double UserProfile::getAge()
+{
+	return age;
+}
+
+bool UserProfile::getGender()
+{
+	return gender;
+}
+
+
 

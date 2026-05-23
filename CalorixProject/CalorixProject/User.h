@@ -15,4 +15,5 @@ public:
 
 	std::string getName();
 	std::string getPassword();
+	UserProfile getProfile();
 };

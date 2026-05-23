@@ -3,10 +3,12 @@
 #include <string>
 class FitnessGoal {
 	GoalType goalType;
-	int targetValue;
+	double targetValue;
 	Date startDate;
 	Date endDate;
 	bool isAchieved;
 public:
-	FitnessGoal(GoalType goalType, int targetValue, Date endDate);
+	FitnessGoal(GoalType goalType, double targetValue, Date endDate);
+	bool getIsAchieved();
+	double getTargetValue();
 };
