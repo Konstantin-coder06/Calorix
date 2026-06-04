@@ -1,15 +1,16 @@
 #include "FoodEntry.h"
+#include <memory>
 
-FoodEntry::FoodEntry(Food& food, double quantityGrams) 
+FoodEntry::FoodEntry(std::shared_ptr<Food> food, double quantityGrams)
 	:food(food), 
 	quantityGrams(quantityGrams){}
 
-Food& FoodEntry::getFood()
+std::shared_ptr<Food> FoodEntry::getFood() const
 {
 	return food;
 }
 
-double FoodEntry::getQuantityGrams()
+double FoodEntry::getQuantityGrams()const
 {
 	return quantityGrams;
 }

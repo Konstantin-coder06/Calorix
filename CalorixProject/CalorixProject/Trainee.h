@@ -10,21 +10,22 @@
 
 class Trainee : public User
 {
-	std::vector<FoodEntry> foodDiary;
-	std::vector<ExerciseEntry> exerciseDiary;
+	std::vector<std::shared_ptr<FoodEntry>> foodDiary;
+	std::vector<std::shared_ptr<ExerciseEntry>> exerciseDiary;
 	std::vector<FitnessGoal> goals;
-	std::vector<Exercise> favoriteExercises;
+	std::vector<std::shared_ptr<Exercise>> favoriteExercises;
 public:
-	Trainee(std::vector<FoodEntry> foodDiary, std::vector<ExerciseEntry> exerciseDiary, std::vector<FitnessGoal> goals, std::vector<Exercise> favoriteExercises);
+	Trainee(std::string username, std::string password, UserProfile profile,
+		std::vector<std::shared_ptr<FoodEntry>> foodDiary, std::vector<std::shared_ptr<ExerciseEntry>> exerciseDiary, std::vector<FitnessGoal> goals, std::vector<std::shared_ptr<Exercise>> favoriteExercises);
 	Trainee() = default;
 	void setGoals(GoalType goalType, int targetValue, Date deadline);
-	void logFood(Food foodName, double quantityGrams);
-	void logExercise(Exercise exerciseName, double durationMinutes);
-	void viewDailySummery();
-	void viewProgress();
-	void calculateBMI();
-	void calculateBMR();
+	void logFood(std::shared_ptr<Food> foodName, double quantityGrams);
+	void logExercise(std::shared_ptr<Exercise> exerciseName, double durationMinutes);
+	void viewDailySummary() const;
+	void viewProgress() const;
+	void calculateBMI() const;
+	void calculateBMR() const;
 	void generateWorkoutPlan(double durationMinutes);
-	void addToFavorites(Exercise exerciseName);
-	void viewFavorites();
+	void addToFavorites(std::shared_ptr<Exercise> exerciseName);
+	void viewFavorites() const;
 };

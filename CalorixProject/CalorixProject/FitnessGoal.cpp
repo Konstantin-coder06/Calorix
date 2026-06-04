@@ -8,12 +8,12 @@ FitnessGoal::FitnessGoal(GoalType goalType, double targetValue, Date endDate)
 	this->endDate = endDate;
 }
 
-bool FitnessGoal::getIsAchieved()
+bool FitnessGoal::getIsAchieved()const
 {
 	return isAchieved;
 }
 
-double FitnessGoal::getTargetValue()
+double FitnessGoal::getTargetValue()const
 {
 	return targetValue;
 }

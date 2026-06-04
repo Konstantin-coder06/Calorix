@@ -12,7 +12,7 @@ User::User(const std::string username, const std::string password, UserProfile p
 	idCounter++;
 }
 
-void User::help()
+void User::help() const
 {
 	std::cout << "Available commands:\n";
 	std::cout << "register\n";
@@ -20,17 +20,17 @@ void User::help()
 	std::cout << "logout\n";
 }
 
-std::string User::getName()
+std::string User::getName() const
 {
 	return username;
 }
 
-std::string User::getPassword()
+std::string User::getPassword() const
 {
 	return password;
 }
 
-UserProfile User::getProfile()
+UserProfile User::getProfile() const
 {
 	return profile;
 }

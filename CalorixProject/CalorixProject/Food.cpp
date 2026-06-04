@@ -4,22 +4,22 @@ Food::Food(std::string name, double calories, double protein, double carbs, doub
 {
 }
 
-double Food::getCalories()
+double Food::getCalories()const
 {
     return caloriesPer100g;
 }
 
-double Food::getProtein()
+double Food::getProtein()const
 {
     return proteinPer100g;
 }
 
-double Food::getCarbs()
+double Food::getCarbs()const
 {
     return carbsPer100g;
 }
 
-double Food::getFat()
+double Food::getFat()const
 {
     return fatPer100g;
 }

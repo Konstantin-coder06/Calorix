@@ -11,9 +11,9 @@ public:
 	User(const std::string username, const std::string password, UserProfile profile);
 	User() = default;
 
-	void help();
+	void help() const;
 
-	std::string getName();
-	std::string getPassword();
-	UserProfile getProfile();
+	std::string getName() const;
+	std::string getPassword() const;
+	UserProfile getProfile() const;
 };

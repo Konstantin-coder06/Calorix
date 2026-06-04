@@ -9,6 +9,6 @@ class FitnessGoal {
 	bool isAchieved;
 public:
 	FitnessGoal(GoalType goalType, double targetValue, Date endDate);
-	bool getIsAchieved();
-	double getTargetValue();
+	bool getIsAchieved() const;
+	double getTargetValue() const;
 };

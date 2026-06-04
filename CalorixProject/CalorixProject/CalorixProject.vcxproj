@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Admin.cpp" />
     <ClCompile Include="Calorix.cpp" />
     <ClCompile Include="CalorixProject.cpp" />
     <ClCompile Include="Date.cpp" />

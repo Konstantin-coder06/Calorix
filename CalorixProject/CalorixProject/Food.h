@@ -14,8 +14,8 @@ public:
 	~Food() = default;
 	Food(const Food& other) = default;
 	Food& operator=(const Food& other) = default;
-	double getCalories();
-	double getProtein();
-	double getCarbs();
-	double getFat();
+	double getCalories() const;
+	double getProtein() const;
+	double getCarbs() const;
+	double getFat() const;
 };
