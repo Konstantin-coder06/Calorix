@@ -4,6 +4,11 @@ Food::Food(std::string name, double calories, double protein, double carbs, doub
 {
 }
 
+std::string Food::getName() const
+{
+    return name;
+}
+
 double Food::getCalories()const
 {
     return caloriesPer100g;
@@ -22,4 +27,9 @@ double Food::getCarbs()const
 double Food::getFat()const
 {
     return fatPer100g;
+}
+
+void Food::setNewCalories(double newCaloriesPer100g)
+{
+    this->caloriesPer100g = newCaloriesPer100g;
 }

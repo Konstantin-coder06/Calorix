@@ -1,5 +1,12 @@
 #include "Admin.h"
 
-void Admin::blockUser(std::string username)
+Admin::Admin(std::string name, std::string password, UserProfile userProfile):User(name,password,userProfile)
 {
 }
+
+bool Admin::isAdmin() const
+{
+	return true;
+}
+
+

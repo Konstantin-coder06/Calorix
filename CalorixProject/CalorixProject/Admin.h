@@ -1,11 +1,9 @@
 #pragma once
 #include <string>
 #include "MuscleGroup.h"
-
-class Admin {
+#include "User.h"
+class Admin: public User {
 public:
-	void blockUser(std::string username);
-	void addFood(std::string name, double caloriesPer100g, double proteinPer100g, double carbsPer100g, double fatPer100g);
-	void addExercise(std::string name, double caloriesBurnedPerHour, MuscleGroup muscleGroup);
-	void updateFood(std::string foodName, double newColories);
+	Admin(std::string name, std::string password, UserProfile userProfile);
+	bool isAdmin()const override;
 };

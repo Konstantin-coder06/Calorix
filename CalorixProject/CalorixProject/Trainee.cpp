@@ -49,24 +49,23 @@ void Trainee::viewDailySummary()const
 	std::cout << "Fat: " << sumOfFat << std::endl;
 }
 
-void Trainee::viewProgress()const
+std::string Trainee::viewProgress()const
 {
-	UserProfile userProfile = getProfile();
+	const UserProfile& userProfile = getProfile();
 	double currentWeight = userProfile.getWeight();
-	double deadline = 0;
-	for (const auto& it : goals) {
-		if (!it.getIsAchieved()) {
-			deadline = it.getTargetValue();
+
+	for (const auto& goal : goals)
+	{
+		if (!goal.getIsAchieved())
+		{
+			double diff = goal.getTargetValue() - currentWeight;
+
+			return "You need " + std::to_string(diff) +
+				" kilos to complete your goal";
 		}
 	}
-	if (deadline != 0) {
-		double diff = deadline - currentWeight;
-		throw std::invalid_argument("You need " + std::to_string(diff) + " kilos to complete your goal");
-	}
-	else {
-		std::cout << "You are completed all goals" << std::endl;
 
-	}
+	return "You have completed all goals";
 }
 double myPow(double number) {
 	return number * number;
@@ -135,4 +134,9 @@ void Trainee::viewFavorites()const
 	for (const auto& it : favoriteExercises) {
 		std::cout << "Exercise: " << it->getName() << std::endl;
 	}
+}
+
+bool Trainee::isAdmin() const
+{
+	return false;
 }

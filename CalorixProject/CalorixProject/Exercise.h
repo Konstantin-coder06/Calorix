@@ -12,6 +12,7 @@ public:
 	Exercise(std::string name, double calBurn,MuscleGroup muscle);
 	Exercise(const Exercise& other) = default;
 	Exercise& operator=(const Exercise& other) = default;
+
 	std::string getName() const;
 	double getCaloriesBurned()const;
 };

@@ -7,9 +7,9 @@ bool Calorix::registerUser(const std::string username, const std::string passwor
         return false;
     }
     else {     
-        users.push_back(User(username, password, UserProfile(age, weight, height, gender)));
+        users.push_back(std::make_shared<User>(username, password, UserProfile(age, weight, height, gender)));
 
-        currentUser = &users.back();
+        currentUser = users.back();
 
         return true;
     }
@@ -17,8 +17,8 @@ bool Calorix::registerUser(const std::string username, const std::string passwor
 
 bool Calorix::isUsernameTaken(const std::string& name)
 {
-    for (auto& user : users) {
-        if (user.getName() == name) {
+    for (const auto& user : users) {
+        if (user->getName() == name) {
             return true;
         }
     }
@@ -32,10 +32,10 @@ bool Calorix::login(std::string username, std::string password)
         return false;
     }
 
-    for (auto& user : users) {
-        if (user.getName() == username) {
-            if (user.getPassword() == password) {
-                currentUser = &user;
+    for (const auto& user : users) {
+        if (user->getName() == username) {
+            if (user->getPassword() == password) {
+                currentUser = user;
                 return true;
             }
         }
@@ -49,6 +49,43 @@ bool Calorix::logout()
         return false;
     }
     currentUser = nullptr;
+    return true;
+}
+
+bool Calorix::blockUser(std::string username)
+{
+    auto it = std::find_if(users.begin(), users.end(), [&](const auto& user) {
+        return user->getName() == username;
+        });
+
+    if (it == users.end()) {
+        return false;
+    }
+
+    users.erase(it);
+    return true;
+}
+
+void Calorix::addFood(std::string name, double caloriesPer100g, double proteinPer100g, double carbsPer100g, double fatPer100g)
+{
+    foods.push_back(Food(name, caloriesPer100g, proteinPer100g, carbsPer100g, fatPer100g));
+}
+
+void Calorix::addExercise(std::string name, double caloriesBurnedPerHour, MuscleGroup muscleGroup)
+{
+    exercises.push_back(Exercise(name, caloriesBurnedPerHour, muscleGroup));
+}
+
+bool Calorix::updateFood(std::string foodName, double newCalories)
+{
+    auto it = std::find_if(foods.begin(), foods.end(), [&](const auto& food) {
+        return food.getName() == foodName;
+        });
+
+    if (it == foods.end()) {
+        return false;
+    }
+    (*it).setNewCalories(newCalories);
     return true;
 }
 

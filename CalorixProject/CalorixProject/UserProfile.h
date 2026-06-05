@@ -15,8 +15,9 @@ class UserProfile {
 public:
 	UserProfile(int age, double weight, double height, bool gender);
 	UserProfile() = default;
-	double getWeight();
-	double getHeight();
-	double getAge();
-	bool getGender();
+
+	double getWeight() const;
+	double getHeight() const;
+	double getAge() const;
+	bool getGender() const;
 };

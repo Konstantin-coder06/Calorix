@@ -14,8 +14,12 @@ public:
 	~Food() = default;
 	Food(const Food& other) = default;
 	Food& operator=(const Food& other) = default;
+
+	std::string getName()const;
 	double getCalories() const;
 	double getProtein() const;
 	double getCarbs() const;
 	double getFat() const;
+
+	void setNewCalories(double newCaloriesPer100g);
 };

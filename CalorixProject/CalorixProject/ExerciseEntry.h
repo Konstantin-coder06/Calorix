@@ -9,6 +9,7 @@ class ExerciseEntry {
 	Date date;
 public:
 	ExerciseEntry(std::shared_ptr<Exercise> exercise, double duration);
+
 	double getDuration()const;
 	std::shared_ptr<Exercise> getExercise()const;
 };

@@ -10,10 +10,13 @@ class User {
 public:
 	User(const std::string username, const std::string password, UserProfile profile);
 	User() = default;
+	virtual ~User() = default;
 
 	void help() const;
 
 	std::string getName() const;
 	std::string getPassword() const;
 	UserProfile getProfile() const;
+
+	virtual bool isAdmin()const = 0;
 };

@@ -7,11 +7,11 @@
 class Calorix {
 	char* name;
 
-	std::vector<User> users;
+	std::vector<std::shared_ptr<User>> users;
 	std::vector<Food> foods;
 	std::vector<Exercise> exercises;
 
-	User* currentUser;
+	std::shared_ptr<User> currentUser;
 
 public:
 	std::ostream readFromFile(const char* fileName);
@@ -21,4 +21,9 @@ public:
 	bool isUsernameTaken(const std::string& name);
 	bool login(std::string username, std::string password);
 	bool logout();
+
+	bool blockUser(std::string username);
+	void addFood(std::string name, double caloriesPer100g, double proteinPer100g, double carbsPer100g, double fatPer100g);
+	void addExercise(std::string name, double caloriesBurnedPerHour, MuscleGroup muscleGroup);
+	bool updateFood(std::string foodName, double newCalories);
 };
