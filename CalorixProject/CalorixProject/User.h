@@ -8,7 +8,7 @@ class User {
 	std::string password;
 	UserProfile profile;
 public:
-	User(const std::string username, const std::string password, UserProfile profile);
+	User(const std::string& username, const std::string& password,const  UserProfile& profile);
 	User() = default;
 	virtual ~User() = default;
 

@@ -12,4 +12,5 @@ public:
 
 	double getDuration()const;
 	std::shared_ptr<Exercise> getExercise()const;
+	double calculateBurnedCalories() const;
 };

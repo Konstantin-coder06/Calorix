@@ -1,4 +1,5 @@
 #include "UserProfile.h"
+#include <stdexcept>
 
 UserProfile::UserProfile(int age, double weight, double height, bool gender)
 {
@@ -27,6 +28,19 @@ double UserProfile::getAge() const
 bool UserProfile::getGender() const
 {
 	return gender;
+}
+
+void UserProfile::setWeight(double weight)
+{
+	if (weight <= 0) {
+		throw std::invalid_argument("Weight must be positive");
+	}
+	this->weight = weight;
+}
+
+void UserProfile::setActivityLevel(Activity activity)
+{
+	activityLevel = activity;
 }
 
 

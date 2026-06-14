@@ -2,7 +2,7 @@
 #include <iostream>
 int User::idCounter = 1;
 
-User::User(const std::string username, const std::string password, UserProfile profile)
+User::User(const std::string& username, const std::string& password, const UserProfile& profile)
 {
 	this->userId = idCounter;
 	this->username = username;

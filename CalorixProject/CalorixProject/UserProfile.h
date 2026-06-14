@@ -1,11 +1,5 @@
 #pragma once
-enum class Activity {
-	Sedentary,
-	Light,
-	Moderate,
-	Active,
-	Very_Active
-};
+#include "Activity.h"
 class UserProfile {
 	int age;
 	double weight;
@@ -20,4 +14,7 @@ public:
 	double getHeight() const;
 	double getAge() const;
 	bool getGender() const;
+
+	void setWeight(double weight);
+	void setActivityLevel(Activity activity);
 };

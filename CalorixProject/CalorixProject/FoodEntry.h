@@ -17,4 +17,5 @@ public:
 	std::shared_ptr<Food> getFood() const;
 	double getQuantityGrams()const;
 	bool isValidQuantity(double quantity);
+	double calculateCalories()const;
 };

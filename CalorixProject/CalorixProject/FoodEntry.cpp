@@ -25,3 +25,8 @@ bool FoodEntry::isValidQuantity(double quantity)
 	return quantity<1;
 }
 
+double FoodEntry::calculateCalories() const
+{
+	return 0.0;
+}
+

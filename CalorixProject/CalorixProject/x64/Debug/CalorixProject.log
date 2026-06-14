@@ -1,5 +1,107 @@
-﻿  Admin.cpp
+﻿  Scanning sources for module dependencies...
+  MaitenanceStrategy.h
+  Compiling...
+  MaitenanceStrategy.h
+  Admin.cpp
   Calorix.cpp
+  CalorixProject.cpp
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(12,9): error C2065: 'currentUser': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(30,9): error C2065: 'currentUser': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(38,17): error C2065: 'currentUser': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(48,9): error C2065: 'currentUser': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(51,5): error C2065: 'currentUser': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(71,11): error C2665: 'std::vector<std::shared_ptr<Food>,std::allocator<std::shared_ptr<Food>>>::push_back': no overloaded function could convert all the argument types
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(936,23):
+      could be 'void std::vector<std::shared_ptr<Food>,std::allocator<std::shared_ptr<Food>>>::push_back(_Ty &&)'
+          with
+          [
+              _Ty=std::shared_ptr<Food>
+          ]
+          D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(71,11):
+          'void std::vector<std::shared_ptr<Food>,std::allocator<std::shared_ptr<Food>>>::push_back(_Ty &&)': cannot convert argument 1 from 'Food' to '_Ty &&'
+          with
+          [
+              _Ty=std::shared_ptr<Food>
+          ]
+              D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(71,25):
+              Reason: cannot convert from 'Food' to '_Ty'
+          with
+          [
+              _Ty=std::shared_ptr<Food>
+          ]
+              D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(71,25):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(932,23):
+      or       'void std::vector<std::shared_ptr<Food>,std::allocator<std::shared_ptr<Food>>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=std::shared_ptr<Food>
+          ]
+          D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(71,11):
+          'void std::vector<std::shared_ptr<Food>,std::allocator<std::shared_ptr<Food>>>::push_back(const _Ty &)': cannot convert argument 1 from 'Food' to 'const _Ty &'
+          with
+          [
+              _Ty=std::shared_ptr<Food>
+          ]
+              D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(71,25):
+              Reason: cannot convert from 'Food' to 'const _Ty'
+          with
+          [
+              _Ty=std::shared_ptr<Food>
+          ]
+              D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(71,25):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(71,11):
+      while trying to match the argument list '(Food)'
+  
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(76,15): error C2665: 'std::vector<std::shared_ptr<Exercise>,std::allocator<std::shared_ptr<Exercise>>>::push_back': no overloaded function could convert all the argument types
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(936,23):
+      could be 'void std::vector<std::shared_ptr<Exercise>,std::allocator<std::shared_ptr<Exercise>>>::push_back(_Ty &&)'
+          with
+          [
+              _Ty=std::shared_ptr<Exercise>
+          ]
+          D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(76,15):
+          'void std::vector<std::shared_ptr<Exercise>,std::allocator<std::shared_ptr<Exercise>>>::push_back(_Ty &&)': cannot convert argument 1 from 'Exercise' to '_Ty &&'
+          with
+          [
+              _Ty=std::shared_ptr<Exercise>
+          ]
+              D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(76,33):
+              Reason: cannot convert from 'Exercise' to '_Ty'
+          with
+          [
+              _Ty=std::shared_ptr<Exercise>
+          ]
+              D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(76,33):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(932,23):
+      or       'void std::vector<std::shared_ptr<Exercise>,std::allocator<std::shared_ptr<Exercise>>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=std::shared_ptr<Exercise>
+          ]
+          D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(76,15):
+          'void std::vector<std::shared_ptr<Exercise>,std::allocator<std::shared_ptr<Exercise>>>::push_back(const _Ty &)': cannot convert argument 1 from 'Exercise' to 'const _Ty &'
+          with
+          [
+              _Ty=std::shared_ptr<Exercise>
+          ]
+              D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(76,33):
+              Reason: cannot convert from 'Exercise' to 'const _Ty'
+          with
+          [
+              _Ty=std::shared_ptr<Exercise>
+          ]
+              D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(76,33):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(76,15):
+      while trying to match the argument list '(Exercise)'
+  
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(88,11): error C2039: 'setNewCalories': is not a member of 'std::shared_ptr<Food>'
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\memory(1588,7):
+      see declaration of 'std::shared_ptr<Food>'
+  
   Date.cpp
   Exercise.cpp
   ExerciseEntry.cpp
@@ -28,18 +130,18 @@ D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(11,21): error C7568: ar
 D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(11,21): error C2061: syntax error: identifier 'shared_ptr'
   (compiling source file 'ExerciseEntry.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(13,7): error C2039: 'shared_ptr': is not a member of 'std'
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(14,7): error C2039: 'shared_ptr': is not a member of 'std'
   (compiling source file 'ExerciseEntry.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\string(23,1):
       see declaration of 'std'
   
-D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(13,7): error C7568: argument list missing after assumed function template 'shared_ptr'
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(14,7): error C7568: argument list missing after assumed function template 'shared_ptr'
   (compiling source file 'ExerciseEntry.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(13,7): error C2062: type '<error>' unexpected
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(14,7): error C2062: type '<error>' unexpected
   (compiling source file 'ExerciseEntry.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(13,46): error C2238: unexpected token(s) preceding ';'
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(14,46): error C2238: unexpected token(s) preceding ';'
   (compiling source file 'ExerciseEntry.cpp')
   
 D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.cpp(4,16): error C2511: 'ExerciseEntry::ExerciseEntry(std::shared_ptr<Exercise>,double)': overloaded member function not found in 'ExerciseEntry'
@@ -108,35 +210,35 @@ D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(13,2): error C2535: 'FoodEn
       D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(12,2):
       see declaration of 'FoodEntry::FoodEntry'
   
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(14,7): error C2039: 'shared_ptr': is not a member of 'std'
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(15,17): error C2039: 'unique_ptr': is not a member of 'std'
   (compiling source file 'FoodEntry.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\string(23,1):
       see declaration of 'std'
   
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(14,7): error C7568: argument list missing after assumed function template 'shared_ptr'
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(15,17): error C7568: argument list missing after assumed function template 'unique_ptr'
   (compiling source file 'FoodEntry.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(14,7): error C2062: type '<error>' unexpected
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(15,17): error C2061: syntax error: identifier 'unique_ptr'
   (compiling source file 'FoodEntry.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(14,39): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'FoodEntry.cpp')
-  
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(16,17): error C2039: 'unique_ptr': is not a member of 'std'
-  (compiling source file 'FoodEntry.cpp')
-      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\string(23,1):
-      see declaration of 'std'
-  
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(16,17): error C7568: argument list missing after assumed function template 'unique_ptr'
-  (compiling source file 'FoodEntry.cpp')
-  
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(16,17): error C2061: syntax error: identifier 'unique_ptr'
-  (compiling source file 'FoodEntry.cpp')
-  
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(16,2): error C2535: 'FoodEntry::FoodEntry(void)': member function already defined or declared
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(15,2): error C2535: 'FoodEntry::FoodEntry(void)': member function already defined or declared
   (compiling source file 'FoodEntry.cpp')
       D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(12,2):
       see declaration of 'FoodEntry::FoodEntry'
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(17,7): error C2039: 'shared_ptr': is not a member of 'std'
+  (compiling source file 'FoodEntry.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\string(23,1):
+      see declaration of 'std'
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(17,7): error C7568: argument list missing after assumed function template 'shared_ptr'
+  (compiling source file 'FoodEntry.cpp')
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(17,7): error C2062: type '<error>' unexpected
+  (compiling source file 'FoodEntry.cpp')
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(17,39): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'FoodEntry.cpp')
   
 D:\Calorix\CalorixProject\CalorixProject\FoodEntry.cpp(4,12): error C2511: 'FoodEntry::FoodEntry(std::shared_ptr<Food>,double)': overloaded member function not found in 'FoodEntry'
       D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(5,7):
@@ -149,6 +251,11 @@ D:\Calorix\CalorixProject\CalorixProject\FoodEntry.cpp(8,34): error C2039: 'getF
   
 D:\Calorix\CalorixProject\CalorixProject\FoodEntry.cpp(8,34): error C2270: 'getFood': modifiers not allowed on nonmember functions
 D:\Calorix\CalorixProject\CalorixProject\FoodEntry.cpp(10,9): error C2065: 'food': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.cpp(18,12): error C2511: 'FoodEntry::FoodEntry(std::unique_ptr<Food,std::default_delete<Food>>,double,Date)': overloaded member function not found in 'FoodEntry'
+      D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(5,7):
+      see declaration of 'FoodEntry'
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.cpp(19,1): error C2550: 'FoodEntry::{ctor}': constructor initializer lists are only allowed on constructor definitions
   Trainee.cpp
 D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(8,7): error C2039: 'shared_ptr': is not a member of 'std'
   (compiling source file 'Trainee.cpp')
@@ -180,35 +287,35 @@ D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(13,2): error C2535: 'FoodEn
       D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(12,2):
       see declaration of 'FoodEntry::FoodEntry'
   
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(14,7): error C2039: 'shared_ptr': is not a member of 'std'
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(15,17): error C2039: 'unique_ptr': is not a member of 'std'
   (compiling source file 'Trainee.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
       see declaration of 'std'
   
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(14,7): error C7568: argument list missing after assumed function template 'shared_ptr'
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(15,17): error C7568: argument list missing after assumed function template 'unique_ptr'
   (compiling source file 'Trainee.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(14,7): error C2062: type '<error>' unexpected
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(15,17): error C2061: syntax error: identifier 'unique_ptr'
   (compiling source file 'Trainee.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(14,39): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'Trainee.cpp')
-  
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(16,17): error C2039: 'unique_ptr': is not a member of 'std'
-  (compiling source file 'Trainee.cpp')
-      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
-      see declaration of 'std'
-  
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(16,17): error C7568: argument list missing after assumed function template 'unique_ptr'
-  (compiling source file 'Trainee.cpp')
-  
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(16,17): error C2061: syntax error: identifier 'unique_ptr'
-  (compiling source file 'Trainee.cpp')
-  
-D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(16,2): error C2535: 'FoodEntry::FoodEntry(void)': member function already defined or declared
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(15,2): error C2535: 'FoodEntry::FoodEntry(void)': member function already defined or declared
   (compiling source file 'Trainee.cpp')
       D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(12,2):
       see declaration of 'FoodEntry::FoodEntry'
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(17,7): error C2039: 'shared_ptr': is not a member of 'std'
+  (compiling source file 'Trainee.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
+      see declaration of 'std'
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(17,7): error C7568: argument list missing after assumed function template 'shared_ptr'
+  (compiling source file 'Trainee.cpp')
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(17,7): error C2062: type '<error>' unexpected
+  (compiling source file 'Trainee.cpp')
+  
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.h(17,39): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Trainee.cpp')
   
 D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(7,7): error C2039: 'shared_ptr': is not a member of 'std'
   (compiling source file 'Trainee.cpp')
@@ -235,18 +342,18 @@ D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(11,21): error C7568: ar
 D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(11,21): error C2061: syntax error: identifier 'shared_ptr'
   (compiling source file 'Trainee.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(13,7): error C2039: 'shared_ptr': is not a member of 'std'
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(14,7): error C2039: 'shared_ptr': is not a member of 'std'
   (compiling source file 'Trainee.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
       see declaration of 'std'
   
-D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(13,7): error C7568: argument list missing after assumed function template 'shared_ptr'
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(14,7): error C7568: argument list missing after assumed function template 'shared_ptr'
   (compiling source file 'Trainee.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(13,7): error C2062: type '<error>' unexpected
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(14,7): error C2062: type '<error>' unexpected
   (compiling source file 'Trainee.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(13,46): error C2238: unexpected token(s) preceding ';'
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.h(14,46): error C2238: unexpected token(s) preceding ';'
   (compiling source file 'Trainee.cpp')
   
 D:\Calorix\CalorixProject\CalorixProject\Trainee.h(13,19): error C2039: 'shared_ptr': is not a member of 'std'
@@ -271,6 +378,30 @@ D:\Calorix\CalorixProject\CalorixProject\Trainee.h(13,39): error C2059: syntax e
   (compiling source file 'Trainee.cpp')
   
 D:\Calorix\CalorixProject\CalorixProject\Trainee.h(13,51): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Trainee.cpp')
+  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(14,19): error C2039: 'shared_ptr': is not a member of 'std'
+  (compiling source file 'Trainee.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
+      see declaration of 'std'
+  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(14,30): error C2275: 'ExerciseEntry': expected an expression instead of a type
+  (compiling source file 'Trainee.cpp')
+  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(14,7): error C2974: 'std::vector': invalid template argument for '_Ty', type expected
+  (compiling source file 'Trainee.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(442,7):
+      see declaration of 'std::vector'
+  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(14,7): error C2976: 'std::vector': too few template arguments
+  (compiling source file 'Trainee.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(442,7):
+      see declaration of 'std::vector'
+  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(14,43): error C2059: syntax error: '>'
+  (compiling source file 'Trainee.cpp')
+  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(14,59): error C2238: unexpected token(s) preceding ';'
   (compiling source file 'Trainee.cpp')
   
 D:\Calorix\CalorixProject\CalorixProject\Trainee.h(16,19): error C2039: 'shared_ptr': is not a member of 'std'
@@ -329,31 +460,31 @@ D:\Calorix\CalorixProject\CalorixProject\Trainee.h(18,2): error C2059: syntax er
 D:\Calorix\CalorixProject\CalorixProject\Trainee.h(19,40): error C2059: syntax error: '>'
   (compiling source file 'Trainee.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\Trainee.h(22,20): error C2039: 'shared_ptr': is not a member of 'std'
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(24,20): error C2039: 'shared_ptr': is not a member of 'std'
   (compiling source file 'Trainee.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
       see declaration of 'std'
   
-D:\Calorix\CalorixProject\CalorixProject\Trainee.h(22,20): error C2061: syntax error: identifier 'shared_ptr'
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(24,20): error C2061: syntax error: identifier 'shared_ptr'
   (compiling source file 'Trainee.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\Trainee.h(23,24): error C2039: 'shared_ptr': is not a member of 'std'
-  (compiling source file 'Trainee.cpp')
-      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
-      see declaration of 'std'
-  
-D:\Calorix\CalorixProject\CalorixProject\Trainee.h(23,24): error C2061: syntax error: identifier 'shared_ptr'
-  (compiling source file 'Trainee.cpp')
-  
-D:\Calorix\CalorixProject\CalorixProject\Trainee.h(29,27): error C2039: 'shared_ptr': is not a member of 'std'
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(25,24): error C2039: 'shared_ptr': is not a member of 'std'
   (compiling source file 'Trainee.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
       see declaration of 'std'
   
-D:\Calorix\CalorixProject\CalorixProject\Trainee.h(29,27): error C2061: syntax error: identifier 'shared_ptr'
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(25,24): error C2061: syntax error: identifier 'shared_ptr'
   (compiling source file 'Trainee.cpp')
   
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(5,10): error C2511: 'Trainee::Trainee(std::string,std::string,UserProfile,std::vector<std::shared_ptr<FoodEntry>,std::allocator<std::shared_ptr<FoodEntry>>>,std::vector<ExerciseEntry,std::allocator<ExerciseEntry>>,std::vector<FitnessGoal,std::allocator<FitnessGoal>>,std::vector<std::shared_ptr<Exercise>,std::allocator<std::shared_ptr<Exercise>>>)': overloaded member function not found in 'Trainee'
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(36,27): error C2039: 'shared_ptr': is not a member of 'std'
+  (compiling source file 'Trainee.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(29,1):
+      see declaration of 'std'
+  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.h(36,27): error C2061: syntax error: identifier 'shared_ptr'
+  (compiling source file 'Trainee.cpp')
+  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(5,10): error C2511: 'Trainee::Trainee(std::string,std::string,UserProfile,std::vector<std::shared_ptr<FoodEntry>,std::allocator<std::shared_ptr<FoodEntry>>>,std::vector<std::shared_ptr<ExerciseEntry>,std::allocator<std::shared_ptr<ExerciseEntry>>>,std::vector<FitnessGoal,std::allocator<FitnessGoal>>,std::vector<std::shared_ptr<Exercise>,std::allocator<std::shared_ptr<Exercise>>>)': overloaded member function not found in 'Trainee'
       D:\Calorix\CalorixProject\CalorixProject\Trainee.h(11,7):
       see declaration of 'Trainee'
   
@@ -367,29 +498,27 @@ D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(26,15): error C2511: 'void 
       D:\Calorix\CalorixProject\CalorixProject\Trainee.h(11,7):
       see declaration of 'Trainee'
   
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(28,39): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'ExerciseEntry'
-      D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(28,39):
-      'ExerciseEntry::ExerciseEntry': function does not take 2 arguments
-          D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(28,39):
-          while trying to match the argument list '(std::shared_ptr<Exercise>, double)'
-  
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(28,2): error C2065: 'exerciseDiary': undeclared identifier
 D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(39,24): error C2065: 'foodDiary': undeclared identifier
 D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(39,19): error C2530: 'it': references must be initialized
 D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(39,19): error C3531: 'it': a symbol whose type contains 'auto' must have an initializer
 D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(39,22): error C2143: syntax error: missing ';' before ':'
 D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(39,33): error C2143: syntax error: missing ';' before ')'
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(107,10): error C2065: 'favoriteExercises': undeclared identifier
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(114,16): error C2065: 'favoriteExercises': undeclared identifier
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(127,15): error C2511: 'void Trainee::addToFavorites(std::shared_ptr<Exercise>)': overloaded member function not found in 'Trainee'
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(106,10): error C2065: 'favoriteExercises': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(111,21): error C2065: 'exerciseDiary': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(113,16): error C2065: 'favoriteExercises': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(126,15): error C2511: 'void Trainee::addToFavorites(std::shared_ptr<Exercise>)': overloaded member function not found in 'Trainee'
       D:\Calorix\CalorixProject\CalorixProject\Trainee.h(11,7):
       see declaration of 'Trainee'
   
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(129,2): error C2065: 'favoriteExercises': undeclared identifier
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(135,24): error C2065: 'favoriteExercises': undeclared identifier
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(135,19): error C2530: 'it': references must be initialized
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(135,19): error C3531: 'it': a symbol whose type contains 'auto' must have an initializer
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(135,22): error C2143: syntax error: missing ';' before ':'
-D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(135,41): error C2143: syntax error: missing ';' before ')'
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(128,2): error C2065: 'favoriteExercises': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(134,24): error C2065: 'favoriteExercises': undeclared identifier
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(134,19): error C2530: 'it': references must be initialized
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(134,19): error C3531: 'it': a symbol whose type contains 'auto' must have an initializer
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(134,22): error C2143: syntax error: missing ';' before ':'
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(134,41): error C2143: syntax error: missing ';' before ')'
   User.cpp
   UserProfile.cpp
+  WorkoutPlan.cpp
+  WorkoutPlanBuilder.cpp
   Generating Code...
