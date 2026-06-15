@@ -10,24 +10,41 @@ class Calorix {
 	std::vector<std::shared_ptr<User>> users;
 	std::vector<std::shared_ptr<Food>> foods;
 	std::vector<std::shared_ptr<Exercise>> exercises;
-
+	std::shared_ptr<User> currentUser;
 	static Calorix* instance;
 	Calorix() = default;
+	void requireLogin()const;
+	void requireAdmin()const;
+	void requireTrainee()const;
+	std::shared_ptr<User>findUser(const std::string& username)const;
+
 public:
 	static Calorix& getInstance();
 
 
-	bool registerUser(std::string username, std::string password, int age, double weight, double height, bool gender);
+	void registerUser(std::string username, std::string password, int age, double weight, double height, bool gender);
 	bool isUsernameTaken(const std::string& name);
-	bool login(std::string username, std::string password);
-	bool logout();
+	void login(std::string username, std::string password);
+	void logout();
 
-	bool blockUser(std::string username);
+	void blockUser(std::string username);
 	void addFood(std::string name, double caloriesPer100g, double proteinPer100g, double carbsPer100g, double fatPer100g);
 	void addExercise(std::string name, double caloriesBurnedPerHour, MuscleGroup muscleGroup);
 	bool updateFood(std::string foodName, double newCalories);
 
 	std::shared_ptr<Food> findFood(const std::string& name);
 	std::shared_ptr<Exercise> findExercise(const std::string& name);
+
+	void logFood(const std::string& foodName, double quantityGrams, const Date& date);
+	void logExercise(const std::string& exerciseName, double durationMinutes, const Date& date);
+	void addToFavorites(const std::string& exerciseName);
+
+	void viewDailySummary() const;
+	void viewProgress() const;
+	void calculateBMI() const;
+	void calculateBMR() const;
+	void viewFavorites() const;
+	void generateWorkoutPlan(int durationMinutes) const;
+	void help() const;
 	void end();
 };

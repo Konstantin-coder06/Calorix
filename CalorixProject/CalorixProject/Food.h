@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+
 class Food {
 	int foodId;
 	static int idCounter;
@@ -15,7 +16,7 @@ public:
 	Food(const Food& other) = default;
 	Food& operator=(const Food& other) = default;
 
-	std::string getName()const;
+	std::string getName() const;
 	double getCalories() const;
 	double getProtein() const;
 	double getCarbs() const;

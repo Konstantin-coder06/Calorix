@@ -2,5 +2,5 @@
 #include "GoalStrategy.h"
 class WeightLossStrategy :public GoalStrategy {
 public:
-	double calculateTargetCalories(const UserProfile& proifle)const override;
+	double calculateTargetCalories(const UserProfile& proifile)const override;
 };

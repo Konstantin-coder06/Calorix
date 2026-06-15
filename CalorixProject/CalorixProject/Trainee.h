@@ -10,30 +10,32 @@
 
 class Trainee : public User
 {
-	std::vector<std::shared_ptr<FoodEntry>> foodDiary;
-	std::vector<std::shared_ptr<ExerciseEntry>> exerciseDiary;
+	std::vector<FoodEntry> foodDiary;
+	std::vector<ExerciseEntry> exerciseDiary;
 	std::vector<FitnessGoal> goals;
 	std::vector<std::shared_ptr<Exercise>> favoriteExercises;
 public:
-	Trainee(std::string username, std::string password, UserProfile profile,
-		std::vector<std::shared_ptr<FoodEntry>> foodDiary, std::vector<std::shared_ptr<ExerciseEntry>> exerciseDiary, std::vector<FitnessGoal> goals, std::vector<std::shared_ptr<Exercise>> favoriteExercises);
+	Trainee(std::string username, std::string password, UserProfile profile);
+		
 	Trainee() = default;
 
-	void setGoals(GoalType goalType, int targetValue, Date deadline);
+	void setGoals(GoalType goalType, int targetValue,Date startDate, Date deadline);
 
-	void logFood(std::shared_ptr<Food> foodName, double quantityGrams);
-	void logExercise(std::shared_ptr<Exercise> exerciseName, double durationMinutes);
+	void logFood(const FoodEntry& entry);
+	void logExercise(const ExerciseEntry& entry);
 
 	void viewDailySummary() const;
-	std::string viewProgress() const;
+	void viewProgress() const;
 	void viewFavorites() const;
 
-	void calculateBMI() const;
-	void calculateBMR() const;
+	double calculateBMI() const;
+	double calculateBMR() const;
 
-	void generateWorkoutPlan(double durationMinutes);
+	void generateWorkoutPlan(const std::vector<std::shared_ptr<Exercise>>& exercises, double durationMinutes);
 
 	void addToFavorites(std::shared_ptr<Exercise> exerciseName);
 	
 	bool isAdmin()const override;
+	double calculateTargetCalories() const;
+	void help()const override;
 };

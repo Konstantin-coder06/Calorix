@@ -15,7 +15,7 @@ double FoodEntry::getQuantityGrams()const
 	return quantityGrams;
 }
 
-FoodEntry::FoodEntry(std::unique_ptr<Food> food, double quantityGrams, Date date) :food(std::move(food)), quantityGrams(quantityGrams), date(date)
+FoodEntry::FoodEntry(std::shared_ptr<Food> food, double quantityGrams, Date date) :food(std::move(food)), quantityGrams(quantityGrams), date(date)
 {
 }
 
@@ -27,6 +27,6 @@ bool FoodEntry::isValidQuantity(double quantity)
 
 double FoodEntry::calculateCalories() const
 {
-	return 0.0;
+	return food->getCalories() * quantityGrams / 100;
 }
 

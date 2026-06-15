@@ -12,7 +12,7 @@ public:
 	User() = default;
 	virtual ~User() = default;
 
-	void help() const;
+	virtual void help() const=0;
 
 	std::string getName() const;
 	std::string getPassword() const;

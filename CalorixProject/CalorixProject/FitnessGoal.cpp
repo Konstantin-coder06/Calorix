@@ -1,11 +1,13 @@
 #include "FitnessGoal.h"
 #include "Date.h"
 
-FitnessGoal::FitnessGoal(GoalType goalType, double targetValue, Date endDate)
+FitnessGoal::FitnessGoal(GoalType goalType, double targetValue,Date startDate, Date endDate):goalType(goalType),targetValue(targetValue),startDate(startDate),endDate(endDate), isAchieved(false)
 {
-	this->goalType = goalType;
-	this->targetValue = targetValue;
-	this->endDate = endDate;
+}
+
+GoalType FitnessGoal::getGoalType() const
+{
+	return goalType;
 }
 
 bool FitnessGoal::getIsAchieved()const

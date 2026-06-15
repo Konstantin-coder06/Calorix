@@ -1,10 +1,10 @@
 #include "Exercise.h"
 
-Exercise::Exercise(std::string name, double calBurn, MuscleGroup muscle)
+int Exercise::idCounter = 0;
+Exercise::Exercise(std::string name, double calBurn, MuscleGroup muscle):name(name),caloriesBurnedPerHour(calBurn),muscleGroup(muscle)
 {
-	this->name = name;
-	this->caloriesBurnedPerHour = calBurn;
-	this->muscleGroup = muscle;
+	exerciseId = idCounter;
+	idCounter++;
 }
 
 std::string Exercise::getName()const

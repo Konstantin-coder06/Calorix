@@ -1,7 +1,11 @@
 #include "Food.h"
 
-Food::Food(std::string name, double calories, double protein, double carbs, double fat)
+int Food::idCounter = 0;
+Food::Food(std::string name, double calories, double protein, double carbs, double fat):name(name),caloriesPer100g(calories),
+          proteinPer100g(protein),carbsPer100g(carbs),fatPer100g(fat)
 {
+    foodId = idCounter;
+    idCounter++;
 }
 
 std::string Food::getName() const

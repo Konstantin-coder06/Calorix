@@ -3,7 +3,7 @@
 #include "User.h"
 class UserFactory {
 public:
-	static std::shared_ptr<User> createUser(const std::string& username,
+	static std::shared_ptr<User> createTrainee(const std::string& username,
         const std::string& password,
         const UserProfile& profile);
 

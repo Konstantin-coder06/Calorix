@@ -54,10 +54,16 @@
     <ClCompile Include="MaitenanceStrategy.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="WorkoutPlan.cpp">
+    <ClCompile Include="WeightLossStrategy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="WorkoutPlanBuilder.cpp">
+    <ClCompile Include="BulkingStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaitenanceStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -108,12 +114,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BulkingStrategy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WorkoutPlan.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WorkoutPlanBuilder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UserFactory.h">
