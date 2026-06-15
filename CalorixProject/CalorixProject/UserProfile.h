@@ -12,7 +12,7 @@ public:
 
 	double getWeight() const;
 	double getHeight() const;
-	double getAge() const;
+	int getAge() const;
 	bool getGender() const;
 
 	void setWeight(double weight);

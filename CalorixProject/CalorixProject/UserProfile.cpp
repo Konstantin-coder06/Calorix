@@ -3,11 +3,23 @@
 
 UserProfile::UserProfile(int age, double weight, double height, bool gender)
 {
-	this->age = age;
-	this->weight = weight;
-	this->height = height;
-	this->gender = gender;
-	this->activityLevel = Activity::Sedentary;
+    if (age <= 0) {
+        throw std::invalid_argument("Age must be positive");
+    }
+
+    if (weight <= 0) {
+        throw std::invalid_argument("Weight must be positive");
+    }
+
+    if (height <= 0) {
+        throw std::invalid_argument("Height must be positive");
+    }
+
+    this->age = age;
+    this->weight = weight;
+    this->height = height;
+    this->gender = gender;
+    this->activityLevel = Activity::Sedentary;
 }
 
 double UserProfile::getWeight() const
@@ -20,7 +32,7 @@ double UserProfile::getHeight() const
 	return height;
 }
 
-double UserProfile::getAge() const
+int UserProfile::getAge() const
 {
 	return age;
 }

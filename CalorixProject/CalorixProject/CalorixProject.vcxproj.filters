@@ -51,7 +51,7 @@
     <ClCompile Include="Admin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MaitenanceStrategy.h">
+    <ClCompile Include="MaintenanceStrategy.h">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="WeightLossStrategy.cpp">
@@ -60,7 +60,7 @@
     <ClCompile Include="BulkingStrategy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MaitenanceStrategy.cpp">
+    <ClCompile Include="MaintenanceStrategy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UserFactory.cpp">

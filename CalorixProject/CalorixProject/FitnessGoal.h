@@ -1,6 +1,6 @@
 #pragma once
 #include "GoalType.h"
-#include <string>
+#include "Date.h"
 class FitnessGoal {
 	GoalType goalType;
 	double targetValue;

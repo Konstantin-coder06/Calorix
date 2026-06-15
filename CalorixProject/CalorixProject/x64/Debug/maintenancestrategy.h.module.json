@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\MaintenanceStrategy.h.obj",
+            "outputs": [
+                "D:\\Calorix\\CalorixProject\\CalorixProject\\x64\\Debug\\vc145.pdb",
+                "x64\\Debug\\",
+                "D:\\Calorix\\CalorixProject\\CalorixProject\\x64\\Debug\\MaintenanceStrategy.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "MaintenanceStrategy.h",
+                    "source-path": "d:\\calorix\\calorixproject\\calorixproject\\maintenancestrategy.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

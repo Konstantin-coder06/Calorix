@@ -4,7 +4,42 @@
 #include <iostream>
 #include "Calorix.h"
 #include "Date.h"
+int readInt()
+{
+    int value;
 
+    while (!(std::cin >> value))
+    {
+        std::cin.clear();
+
+        char c;
+        while (std::cin.get(c) && c != '\n')
+        {
+        }
+
+        std::cout << "Invalid number. Try again: ";
+    }
+
+    return value;
+}
+double readDouble()
+{
+    double value;
+
+    while (!(std::cin >> value))
+    {
+        std::cin.clear();
+
+        char c;
+        while (std::cin.get(c) && c != '\n')
+        {
+        }
+
+        std::cout << "Invalid number. Try again: ";
+    }
+
+    return value;
+}
 int main()
 {
     Calorix& calorix = Calorix::getInstance();
@@ -24,7 +59,8 @@ int main()
             std::cout << "6. Help\n";
             std::cout << "7. End\n";
             std::cout << "Choice: ";
-            std::cin >> choice;
+            choice = readInt();
+
 
             if (choice == 1)
             {
@@ -39,13 +75,13 @@ int main()
                 std::cin >> password;
 
                 std::cout << "Age: ";
-                std::cin >> age;
+                age = readInt();
 
                 std::cout << "Weight: ";
-                std::cin >> weight;
+                weight = readDouble();
 
                 std::cout << "Height: ";
-                std::cin >> height;
+                height = readDouble();
 
                 
 
@@ -74,6 +110,10 @@ int main()
             }
             else if (choice == 4)
             {
+                if (!calorix.isCurrentUserAdmin() || !calorix.isLoggedIn()) {
+                    std::cout << "You do not have permissions to admin menu\n";
+                    continue;
+                }
                 int adminChoice;
 
                 std::cout << "\n===== ADMIN MENU =====\n";
@@ -93,16 +133,16 @@ int main()
                     std::cin >> name;
 
                     std::cout << "Calories per 100g: ";
-                    std::cin >> calories;
+                    calories = readDouble();
 
                     std::cout << "Protein per 100g: ";
-                    std::cin >> protein;
+                    protein = readDouble();
 
                     std::cout << "Carbs per 100g: ";
-                    std::cin >> carbs;
+                    carbs = readDouble();
 
                     std::cout << "Fat per 100g: ";
-                    std::cin >> fat;
+                    fat = readDouble();
 
                     calorix.addFood(name, calories, protein, carbs, fat);
 
@@ -117,7 +157,7 @@ int main()
                     std::cin >> name;
 
                     std::cout << "Calories burned per hour: ";
-                    std::cin >> caloriesBurned;
+                    caloriesBurned = readDouble();
 
                     calorix.addExercise(
                         name,
@@ -136,7 +176,7 @@ int main()
                     std::cin >> foodName;
 
                     std::cout << "New calories: ";
-                    std::cin >> newCalories;
+                    newCalories = readDouble();
 
                     calorix.updateFood(foodName, newCalories);
 
@@ -156,6 +196,10 @@ int main()
             }
             else if (choice == 5)
             {
+                if (!calorix.isCurrentUserTrainee() || !calorix.isLoggedIn()) {
+                    std::cout << "You do not have permissions to Trainee menu\n";
+                    continue;
+                }
                 int traineeChoice;
 
                 std::cout << "\n===== TRAINEE MENU =====\n";
@@ -180,7 +224,7 @@ int main()
                     std::cin >> foodName;
 
                     std::cout << "Quantity grams: ";
-                    std::cin >> quantity;
+                    quantity = readDouble();
 
                     Date today(15, 6, 2026);
 
@@ -197,7 +241,7 @@ int main()
                     std::cin >> exerciseName;
 
                     std::cout << "Duration minutes: ";
-                    std::cin >> duration;
+                    duration = readDouble();
 
                     Date today(15, 6, 2026);
 
@@ -241,7 +285,7 @@ int main()
                     int duration;
 
                     std::cout << "Workout duration minutes: ";
-                    std::cin >> duration;
+                    duration = readInt();
 
                     calorix.generateWorkoutPlan(duration);
                 }

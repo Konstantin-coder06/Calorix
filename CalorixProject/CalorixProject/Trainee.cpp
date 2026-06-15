@@ -4,7 +4,11 @@
 #include "GoalStrategy.h"
 #include "BulkingStrategy.h"
 #include "WeightLossStrategy.h"
-#include "MaitenanceStrategy.h"
+#include "MaintenanceStrategy.h"
+#include <algorithm>
+#include <stdexcept>
+#include <vector>
+#include <memory>
 Trainee::Trainee(std::string username, std::string password, UserProfile profile)
 	:User(username, password, profile)
 {
@@ -215,7 +219,9 @@ double Trainee::calculateTargetCalories() const
 	if (goals.empty()) {
 		return calculateBMR();
 	}
+
 	std::unique_ptr<GoalStrategy> strategy;
+
 	switch (goals.back().getGoalType()) {
 	case GoalType::Bulking:
 		strategy = std::make_unique<BulkingStrategy>();
@@ -224,9 +230,9 @@ double Trainee::calculateTargetCalories() const
 		strategy = std::make_unique<WeightLossStrategy>();
 		break;
 	case GoalType::Maintenance:
-		strategy = std::make_unique<MaitenanceStrategy>();
+		strategy = std::make_unique<MaintenanceStrategy>();
 		break;
 	}
 	
-	return strategy->calculateTargetCalories(getProfile());
+	return strategy->calculateTargetCalories(calculateBMR());
 }

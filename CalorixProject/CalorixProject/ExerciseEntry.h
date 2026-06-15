@@ -9,10 +9,10 @@ class ExerciseEntry {
 	double durationMinutes;
 	Date date;
 public:
-	ExerciseEntry(std::shared_ptr<Exercise> exercise,
-		double durationMinutes,
-		const Date& date);
+	ExerciseEntry(std::shared_ptr<Exercise> exercise, double durationMinutes, const Date& date);
+
 	double getDuration()const;
 	std::shared_ptr<Exercise> getExercise()const;
+	
 	double calculateBurnedCalories() const;
 };

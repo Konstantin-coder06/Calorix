@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\MaintenanceStrategy.obj",
+            "outputs": [
+                "x64\\Debug\\MaintenanceStrategy.h_CBD15D0F18F32B31.ifc.dt.module.json",
+                "x64\\Debug\\MaintenanceStrategy.h_CBD15D0F18F32B31.ifc.dt.d.json",
+                "x64\\Debug\\MaintenanceStrategy.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "D:\\Calorix\\CalorixProject\\CalorixProject\\MaintenanceStrategy.h",
+                    "source-path": "d:\\calorix\\calorixproject\\calorixproject\\maintenancestrategy.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

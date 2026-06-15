@@ -1,5 +1,6 @@
 #include "Admin.h"
 #include <iostream>
+#include "UserProfile.h"
 
 Admin::Admin(std::string name, std::string password, UserProfile userProfile):User(name,password,userProfile)
 {

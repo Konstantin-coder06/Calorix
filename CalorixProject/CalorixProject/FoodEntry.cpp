@@ -1,9 +1,6 @@
 #include "FoodEntry.h"
 #include <memory>
 
-FoodEntry::FoodEntry(std::shared_ptr<Food> food, double quantityGrams)
-	:food(std::move(food)), 
-	quantityGrams(quantityGrams){}
 
 std::shared_ptr<Food> FoodEntry::getFood() const
 {
@@ -21,12 +18,14 @@ FoodEntry::FoodEntry(std::shared_ptr<Food> food, double quantityGrams, Date date
 
 bool FoodEntry::isValidQuantity(double quantity)
 {
-
-	return quantity<1;
+	return quantity >= 1;
 }
 
 double FoodEntry::calculateCalories() const
 {
+	if (!food) {
+		return 0.0;
+	}
 	return food->getCalories() * quantityGrams / 100;
 }
 

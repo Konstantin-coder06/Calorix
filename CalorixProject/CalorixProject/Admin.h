@@ -1,10 +1,8 @@
 #pragma once
 #include <string>
-#include "MuscleGroup.h"
 #include "User.h"
-#include <memory>
-#include "Food.h"
-#include "Exercise.h"
+#include "UserProfile.h"
+
 class Admin: public User {
 public:
 	Admin(std::string name, std::string password, UserProfile userProfile);

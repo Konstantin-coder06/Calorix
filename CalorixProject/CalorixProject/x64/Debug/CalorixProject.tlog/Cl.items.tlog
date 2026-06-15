@@ -1,2 +1,17 @@
+D:\Calorix\CalorixProject\CalorixProject\Admin.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\Admin.obj
+D:\Calorix\CalorixProject\CalorixProject\BulkingStrategy.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\BulkingStrategy.obj
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\Calorix.obj
 D:\Calorix\CalorixProject\CalorixProject\CalorixProject.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\CalorixProject.obj
+D:\Calorix\CalorixProject\CalorixProject\Date.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\Date.obj
+D:\Calorix\CalorixProject\CalorixProject\Exercise.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\Exercise.obj
+D:\Calorix\CalorixProject\CalorixProject\ExerciseEntry.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\ExerciseEntry.obj
+D:\Calorix\CalorixProject\CalorixProject\FitnessGoal.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\FitnessGoal.obj
+D:\Calorix\CalorixProject\CalorixProject\Food.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\Food.obj
+D:\Calorix\CalorixProject\CalorixProject\FoodEntry.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\FoodEntry.obj
+D:\Calorix\CalorixProject\CalorixProject\MaintenanceStrategy.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\MaintenanceStrategy.obj
+D:\Calorix\CalorixProject\CalorixProject\MaintenanceStrategy.h;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\MaintenanceStrategy.h.obj
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\Trainee.obj
 D:\Calorix\CalorixProject\CalorixProject\User.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\User.obj
+D:\Calorix\CalorixProject\CalorixProject\UserFactory.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\UserFactory.obj
+D:\Calorix\CalorixProject\CalorixProject\UserProfile.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\UserProfile.obj
+D:\Calorix\CalorixProject\CalorixProject\WeightLossStrategy.cpp;D:\Calorix\CalorixProject\CalorixProject\x64\Debug\WeightLossStrategy.obj

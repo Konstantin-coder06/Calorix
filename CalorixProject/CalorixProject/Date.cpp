@@ -1,7 +1,10 @@
 #include "Date.h"
-
+#include <stdexcept>
 Date::Date(int day, int month, int year)
 {
+	if (!isValidDate(day, month, year)) {
+		throw std::invalid_argument("Invalid date");
+	}
 	this->day = day;
 	this->month = month;
 	this->year = year;

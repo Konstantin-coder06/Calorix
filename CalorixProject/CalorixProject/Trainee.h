@@ -6,7 +6,9 @@
 #include "ExerciseEntry.h"
 #include "FitnessGoal.h"
 #include "Date.h"
-#include "Food.h"
+#include "UserProfile.h"
+#include "Exercise.h"
+#include <memory>
 
 class Trainee : public User
 {

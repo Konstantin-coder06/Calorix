@@ -3,5 +3,5 @@
 class GoalStrategy {
 public:
 	virtual ~GoalStrategy() = default;
-	virtual double calculateTargetCalories(const UserProfile& profile)const = 0;
+	virtual double calculateTargetCalories(double bmr)const = 0;
 };

@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\calorix\\calorixproject\\calorixproject\\maintenancestrategy.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "d:\\calorix\\calorixproject\\calorixproject\\goalstrategy.h",
+            "d:\\calorix\\calorixproject\\calorixproject\\userprofile.h",
+            "d:\\calorix\\calorixproject\\calorixproject\\activity.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

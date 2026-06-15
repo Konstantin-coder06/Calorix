@@ -4,7 +4,7 @@
 #include "Admin.h"
 #include <memory>
 #include "Trainee.h"
-
+#include <algorithm>
 void Calorix::requireLogin() const
 {
     if (!currentUser) {
@@ -57,7 +57,7 @@ bool Calorix::isUsernameTaken(const std::string& name)
 void Calorix::login(std::string username, std::string password)
 {
     if (currentUser != nullptr) {
-        std::cout<<"You are already loged in";
+        throw std::runtime_error("You are already logged in");
     }
     auto user = findUser(username);
     if (!user) {
@@ -111,7 +111,7 @@ void Calorix::addExercise(std::string name, double caloriesBurnedPerHour, Muscle
     exercises.push_back(std::make_shared<Exercise>(name, caloriesBurnedPerHour, muscleGroup));
 }
 
-bool Calorix::updateFood(std::string foodName, double newCalories)
+void Calorix::updateFood(std::string foodName, double newCalories)
 {
     requireAdmin();
     auto it = findFood(foodName);
@@ -251,5 +251,20 @@ void Calorix::help() const
 void Calorix::end()
 {
     std::cout << "Saving system data..." << std::endl;
+}
+
+bool Calorix::isLoggedIn() const
+{
+    return currentUser!=nullptr;
+}
+
+bool Calorix::isCurrentUserAdmin() const
+{
+    return std::dynamic_pointer_cast<Admin>(currentUser)!=nullptr;
+}
+
+bool Calorix::isCurrentUserTrainee() const
+{
+    return std::dynamic_pointer_cast<Trainee>(currentUser)!=nullptr;
 }
 
