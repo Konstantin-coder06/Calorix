@@ -5,6 +5,7 @@
 #include "Exercise.h"
 #include <memory>
 #include "Date.h"
+#include "GoalType.h"
 class Calorix {
 	char* name;
 
@@ -15,7 +16,7 @@ class Calorix {
 	std::shared_ptr<User> currentUser;
 	static Calorix* instance;
 
-	Calorix() = default;
+	
 
 	void requireLogin()const;
 	void requireAdmin()const;
@@ -26,7 +27,7 @@ class Calorix {
 public:
 	static Calorix& getInstance();
 
-
+	Calorix();
 	void registerUser(std::string username, std::string password, int age, double weight, double height, bool gender);
 	bool isUsernameTaken(const std::string& name);
 	void login(std::string username, std::string password);
@@ -39,6 +40,8 @@ public:
 
 	std::shared_ptr<Food> findFood(const std::string& name);
 	std::shared_ptr<Exercise> findExercise(const std::string& name);
+
+	void setGoals(GoalType goalType, double targetValue, const Date& startDate, const Date& deadline);
 
 	void logFood(const std::string& foodName, double quantityGrams, const Date& date);
 	void logExercise(const std::string& exerciseName, double durationMinutes, const Date& date);

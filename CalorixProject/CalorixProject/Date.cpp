@@ -1,5 +1,6 @@
 #include "Date.h"
 #include <stdexcept>
+#include <ctime>
 Date::Date(int day, int month, int year)
 {
 	if (!isValidDate(day, month, year)) {
@@ -36,5 +37,35 @@ bool Date::isValidDate(int day, int month, int year)
 	}
 	default:
 		return false;
+	}
+}
+Date Date::getToday()
+{
+	time_t now = time(nullptr);
+
+	tm localTime;
+	localtime_s(&localTime, &now);
+
+	return Date(
+		localTime.tm_mday,
+		localTime.tm_mon + 1,
+		localTime.tm_year + 1900
+	);
+}
+
+void Date::IsCorrectStartEndDate(const Date& startDate, const Date& endDate)
+{
+	if (endDate.year < startDate.year) {
+		throw std::invalid_argument("End year is smaller than start year");
+	}
+	if (endDate.year == startDate.year) {
+		if (endDate.month < startDate.month) {
+			throw std::invalid_argument("End month is smaller than start month");
+		}
+		else if (endDate.month == startDate.month) {
+			if (endDate.day < startDate.day) {
+				throw std::invalid_argument("End day is smaller than start day");
+			}
+		}
 	}
 }

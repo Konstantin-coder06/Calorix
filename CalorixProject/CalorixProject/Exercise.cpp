@@ -1,8 +1,12 @@
 #include "Exercise.h"
-
+#include <stdexcept>
 int Exercise::idCounter = 0;
-Exercise::Exercise(std::string name, double calBurn, MuscleGroup muscle):name(name),caloriesBurnedPerHour(calBurn),muscleGroup(muscle)
+Exercise::Exercise(std::string name, double calBurn, MuscleGroup muscle):name(name),muscleGroup(muscle)
 {
+	if (calBurn <= 0) {
+		throw std::invalid_argument("Calories burned must be positive");
+	}
+	caloriesBurnedPerHour = calBurn;
 	exerciseId = idCounter;
 	idCounter++;
 }

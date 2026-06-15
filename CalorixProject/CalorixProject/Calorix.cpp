@@ -34,8 +34,16 @@ Calorix& Calorix::getInstance()
     return instance;
 }
 
+Calorix::Calorix()
+{
+    users.push_back(UserFactory::createAdmin("admin", "admin123", UserProfile(30, 80, 180, true))); 
+}
+
 void Calorix::registerUser(const std::string username, const std::string password, int age, double weight, double height, bool gender)
 {
+    if (currentUser != nullptr) {
+        throw std::runtime_error("You are already logged in");
+    }
     if (isUsernameTaken(username)) {
         throw std::invalid_argument("Username already exists");
     }
@@ -155,6 +163,15 @@ std::shared_ptr<Exercise> Calorix::findExercise(const std::string& name)
     }
     return *it;
 }
+
+void Calorix::setGoals(GoalType goalType, double targetValue, const Date& startDate, const Date& deadline) 
+{
+    requireTrainee();
+
+    auto trainee = std::dynamic_pointer_cast<Trainee>(currentUser);
+    trainee->setGoals(goalType, targetValue, startDate, deadline);
+}
+
 
 void Calorix::logFood(const std::string& foodName, double quantityGrams, const Date& date)
 {

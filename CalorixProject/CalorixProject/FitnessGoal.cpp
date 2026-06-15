@@ -1,8 +1,12 @@
 #include "FitnessGoal.h"
 #include "Date.h"
-
-FitnessGoal::FitnessGoal(GoalType goalType, double targetValue,Date startDate, Date endDate):goalType(goalType),targetValue(targetValue),startDate(startDate),endDate(endDate), isAchieved(false)
+#include <stdexcept>
+FitnessGoal::FitnessGoal(GoalType goalType, double targetValue, Date startDate, Date endDate) :goalType(goalType), startDate(startDate), endDate(endDate), isAchieved(false)
 {
+	if (targetValue > 150 || targetValue < 40) {
+		throw std::invalid_argument("Target must be in the interval [40,150]");
+	}
+	this->targetValue = targetValue;
 }
 
 GoalType FitnessGoal::getGoalType() const

@@ -4,6 +4,8 @@
 #include <iostream>
 #include "Calorix.h"
 #include "Date.h"
+#include "EnumHelper.h"
+#include "MuscleGroup.h"
 int readInt()
 {
     int value;
@@ -158,12 +160,13 @@ int main()
 
                     std::cout << "Calories burned per hour: ";
                     caloriesBurned = readDouble();
+                    std::string groupText;
+                    
+                    std::cout << "Muscle group (Chest/Back/Legs/Shoulders/Arms/Core/Cardio): ";
+                    std::cin >> groupText;
 
-                    calorix.addExercise(
-                        name,
-                        caloriesBurned,
-                        MuscleGroup::Chest
-                    );
+                    MuscleGroup muscleGroup = EnumHelper::stringToMuscleGroup(groupText);
+                    calorix.addExercise(name, caloriesBurned, muscleGroup);
 
                     std::cout << "Exercise added.\n";
                 }
@@ -202,6 +205,7 @@ int main()
                 }
                 int traineeChoice;
 
+
                 std::cout << "\n===== TRAINEE MENU =====\n";
                 std::cout << "1. Log food\n";
                 std::cout << "2. Log exercise\n";
@@ -212,6 +216,7 @@ int main()
                 std::cout << "7. Add to favorites\n";
                 std::cout << "8. View favorites\n";
                 std::cout << "9. Generate workout plan\n";
+                std::cout << "10. Set goal\n";
                 std::cout << "Choice: ";
                 std::cin >> traineeChoice;
 
@@ -226,7 +231,7 @@ int main()
                     std::cout << "Quantity grams: ";
                     quantity = readDouble();
 
-                    Date today(15, 6, 2026);
+                    Date today = Date::getToday();
 
                     calorix.logFood(foodName, quantity, today);
 
@@ -243,7 +248,7 @@ int main()
                     std::cout << "Duration minutes: ";
                     duration = readDouble();
 
-                    Date today(15, 6, 2026);
+                    Date today = Date::getToday();
 
                     calorix.logExercise(exerciseName, duration, today);
 
@@ -288,6 +293,36 @@ int main()
                     duration = readInt();
 
                     calorix.generateWorkoutPlan(duration);
+                }
+                else if (traineeChoice == 10) {
+                    std::string goalText;
+
+                    std::cout << "Goal type (WeightLoss/Bulking/Maintenance): ";
+                    std::cin >> goalText;
+                    GoalType goalType = EnumHelper::stringToGoalType(goalText);
+
+                    std::cout << "Target value:";
+                    int target = 0;
+                    std::cin >> target;
+
+                    int startDay = 0;
+                    int startMonth = 0;
+                    int startYear = 0;
+
+                    int endDay = 0;
+                    int endMonth = 0;
+                    int endYear = 0;
+                    std::cout << "Enter start day, montth and year\n";
+                    std::cin >> startDay >> startMonth >> startYear;
+                    
+                    std::cout << "Enter end day, montth and year\n";
+                    std::cin >> endDay >> endMonth >> endYear;
+                    
+                    Date startDate(startDay, startMonth, startYear);
+                    Date endDate(endDay, endMonth, endYear);
+
+                    Date::IsCorrectStartEndDate(startDate, endDate);
+                    calorix.setGoals(goalType, target, startDate, endDate);
                 }
             }
             else if (choice == 6)

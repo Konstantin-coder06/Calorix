@@ -8,4 +8,6 @@ public:
 	Date() = default;
 	~Date() = default;
 	bool isValidDate(int day, int month, int year);
+	static Date getToday();
+	static void IsCorrectStartEndDate(const Date& startDate, const Date& endDate);
 };

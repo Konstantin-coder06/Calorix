@@ -189,6 +189,7 @@ void Trainee::viewFavorites()const
 {
 	if (favoriteExercises.empty()) {
 		std::cout << "No favorite exercises" << std::endl;
+		return;
 	}
 	std::cout << "Your favourite exercises:" << std::endl;
 	for (const auto& it : favoriteExercises) {
