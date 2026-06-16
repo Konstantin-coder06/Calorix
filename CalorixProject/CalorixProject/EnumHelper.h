@@ -3,6 +3,7 @@
 #include <string>
 #include "Activity.h"
 #include "GoalType.h"
+#include "Gender.h"
 class EnumHelper {
 public:
 	static MuscleGroup stringToMuscleGroup(std::string muscleGroup);
@@ -13,4 +14,7 @@ public:
 
 	static GoalType stringToGoalType(const std::string& goalType);
 	static std::string goalTypeToString(const GoalType& goalType);
+
+	static Gender stringToGender(const std::string& gender);
+	static std::string genderToString(const Gender& gender);
 };

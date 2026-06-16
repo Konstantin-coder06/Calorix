@@ -128,5 +128,8 @@
     <ClInclude Include="EnumHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Gender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

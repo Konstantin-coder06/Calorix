@@ -42,10 +42,12 @@ double readDouble()
 
     return value;
 }
+const std::string fileName = "data.txt";
 int main()
 {
     Calorix& calorix = Calorix::getInstance();
 
+    calorix.loadFromFile(fileName);
     while (true)
     {
         try
@@ -69,6 +71,7 @@ int main()
                 std::string username, password;
                 int age;
                 double weight, height;
+                std::string genderText;
 
                 std::cout << "Username: ";
                 std::cin >> username;
@@ -85,9 +88,11 @@ int main()
                 std::cout << "Height: ";
                 height = readDouble();
 
-                
+                std::cout << "Gender:(Male/Female) ";
+                std::cin >> genderText;
 
-                calorix.registerUser(username, password, age,weight,height,true);
+
+                calorix.registerUser(username, password, age,weight,height,EnumHelper::stringToGender(genderText));
 
                 std::cout << "Registered successfully.\n";
             }
@@ -331,6 +336,7 @@ int main()
             }
             else if (choice == 7)
             {
+                calorix.saveToFile(fileName);
                 calorix.end();
                 break;
             }

@@ -1,0 +1,4 @@
+ADMIN admin admin123 30 80 180 Male
+USER pesho pesho 20 100 200 Male
+FOOD pizza 201 13 49 12
+FOOD_ENTRY pesho pizza 200 16 6 2026

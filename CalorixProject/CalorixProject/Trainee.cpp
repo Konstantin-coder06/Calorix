@@ -60,32 +60,51 @@ void Trainee::viewDailySummary()const
 }
 
 
-void Trainee::viewProgress()const
+void Trainee::viewProgress()
 {
-	if (goals.empty()) {
-		std::cout << "No goals yet" << std::endl;
+	if (goals.empty())
+	{
+		std::cout << "No goals yet\n";
 		return;
 	}
-	const FitnessGoal& goal = goals.back();
-	if (goal.getGoalType() == GoalType::WeightLoss ||
-		goal.getGoalType() == GoalType::Bulking) {
-		double diff = goal.getTargetValue() - getProfile().getWeight();
-		if (diff > 0)
+
+	FitnessGoal& goal = goals.back();
+
+	double currentWeight = getProfile().getWeight();
+	double target = goal.getTargetValue();
+
+	if (goal.getGoalType() == GoalType::WeightLoss)
+	{
+		if (currentWeight <= target)
 		{
-			std::cout << "You need " << diff << " kg more to reach your goal." << std::endl;
-		}
-		else if (diff < 0)
-		{
-			std::cout << "You need to lose " << -diff << " kg to reach your goal." << std::endl;
+			goal.setIsAchieved();
+			std::cout << "Goal achieved!\n";
 		}
 		else
 		{
-			std::cout << "Goal achieved." << std::endl;
+			std::cout << "You need to lose "
+				<< currentWeight - target
+				<< " kg to reach your goal.\n";
+		}
+	}
+	else if (goal.getGoalType() == GoalType::Bulking)
+	{
+		if (currentWeight >= target)
+		{
+			goal.setIsAchieved();
+			std::cout << "Goal achieved!\n";
+		}
+		else
+		{
+		
+			std::cout << "You need "
+				<< target - currentWeight
+				<< " kg more to reach your goal.\n";
 		}
 	}
 	else
 	{
-		std::cout << "Maintenance goal active." << std::endl;
+		std::cout << "Maintenance goal active.\n";
 	}
 }
 
@@ -214,6 +233,22 @@ void Trainee::help() const
 	std::cout << "generate-workout-plan" << std::endl;
 	std::cout << "add-to-favorites" << std::endl;
 	std::cout << "view-favorites" << std::endl;
+}
+std::vector<FoodEntry> Trainee::getFoods()const
+{
+	return foodDiary;
+}
+std::vector<ExerciseEntry> Trainee::getExercises()const
+{
+	return exerciseDiary;
+}
+std::vector<FitnessGoal> Trainee::getGoals()const
+{
+	return goals;
+}
+std::vector<std::shared_ptr<Exercise>> Trainee::getFavorites()const
+{
+	return favoriteExercises;
 }
 double Trainee::calculateTargetCalories() const
 {

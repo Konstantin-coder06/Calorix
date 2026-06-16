@@ -6,7 +6,8 @@
         "Includes": [
             "d:\\calorix\\calorixproject\\calorixproject\\goalstrategy.h",
             "d:\\calorix\\calorixproject\\calorixproject\\userprofile.h",
-            "d:\\calorix\\calorixproject\\calorixproject\\activity.h"
+            "d:\\calorix\\calorixproject\\calorixproject\\activity.h",
+            "d:\\calorix\\calorixproject\\calorixproject\\gender.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

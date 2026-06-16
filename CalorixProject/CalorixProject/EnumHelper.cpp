@@ -111,3 +111,23 @@ std::string EnumHelper::goalTypeToString(const GoalType& goalType)
     }
 }
 
+Gender EnumHelper::stringToGender(const std::string& gender)
+{
+    if (gender == "Male") {
+        return Gender::Male;
+    }
+    if (gender == "Female") {
+        return Gender::Female;
+    }
+    throw std::invalid_argument("Invalid Gender");
+}
+
+std::string EnumHelper::genderToString(const Gender& gender)
+{
+    switch (gender) {
+    case Gender::Male:return "Male";break;
+    case Gender::Female:return "Female";break;
+    default:return "Unknown";
+    }
+}
+

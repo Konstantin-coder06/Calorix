@@ -33,3 +33,8 @@ double FoodEntry::calculateCalories() const
 	return food->getCalories() * quantityGrams / 100;
 }
 
+Date FoodEntry::getDate() const
+{
+	return date;
+}
+

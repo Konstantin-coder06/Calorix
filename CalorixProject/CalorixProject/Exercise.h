@@ -15,4 +15,5 @@ public:
 
 	std::string getName() const;
 	double getCaloriesBurned()const;
+	MuscleGroup getMuscleGroup()const;
 };

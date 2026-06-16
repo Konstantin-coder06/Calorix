@@ -158,6 +158,7 @@
     <ClInclude Include="FitnessGoal.h" />
     <ClInclude Include="Food.h" />
     <ClInclude Include="FoodEntry.h" />
+    <ClInclude Include="Gender.h" />
     <ClInclude Include="GoalStrategy.h" />
     <ClInclude Include="GoalType.h" />
     <ClInclude Include="MuscleGroup.h" />

@@ -13,5 +13,8 @@ public:
 	GoalType getGoalType()const;
 	bool getIsAchieved() const;
 	double getTargetValue() const;
+	Date getStartDate()const;
+	Date getEndDate()const;
 
+	void setIsAchieved();
 };

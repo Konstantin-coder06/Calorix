@@ -19,4 +19,5 @@ public:
 
 	bool isValidQuantity(double quantity);
 	double calculateCalories()const;
+	Date getDate()const;
 };

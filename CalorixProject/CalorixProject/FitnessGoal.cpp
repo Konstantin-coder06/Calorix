@@ -23,3 +23,18 @@ double FitnessGoal::getTargetValue()const
 {
 	return targetValue;
 }
+
+Date FitnessGoal::getStartDate() const
+{
+	return startDate;
+}
+
+Date FitnessGoal::getEndDate() const
+{
+	return endDate;
+}
+
+void FitnessGoal::setIsAchieved()
+{
+	isAchieved = true;
+}

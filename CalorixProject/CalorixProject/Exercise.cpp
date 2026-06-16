@@ -20,3 +20,8 @@ double Exercise::getCaloriesBurned() const
 {
 	return caloriesBurnedPerHour;
 }
+
+MuscleGroup Exercise::getMuscleGroup() const
+{
+	return muscleGroup;
+}

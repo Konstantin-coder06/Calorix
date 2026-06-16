@@ -5,6 +5,8 @@
 #include <memory>
 #include "Trainee.h"
 #include <algorithm>
+#include <fstream>
+#include "EnumHelper.h"
 void Calorix::requireLogin() const
 {
     if (!currentUser) {
@@ -36,10 +38,10 @@ Calorix& Calorix::getInstance()
 
 Calorix::Calorix()
 {
-    users.push_back(UserFactory::createAdmin("admin", "admin123", UserProfile(30, 80, 180, true))); 
+  
 }
 
-void Calorix::registerUser(const std::string username, const std::string password, int age, double weight, double height, bool gender)
+void Calorix::registerUser(const std::string username, const std::string password, int age, double weight, double height,const Gender& gender)
 {
     if (currentUser != nullptr) {
         throw std::runtime_error("You are already logged in");
@@ -220,7 +222,7 @@ void Calorix::viewDailySummary() const
     trainee->viewDailySummary();
 }
 
-void Calorix::viewProgress() const
+void Calorix::viewProgress()
 {
     requireTrainee();
 
@@ -283,5 +285,195 @@ bool Calorix::isCurrentUserAdmin() const
 bool Calorix::isCurrentUserTrainee() const
 {
     return std::dynamic_pointer_cast<Trainee>(currentUser)!=nullptr;
+}
+
+void Calorix::loadFromFile(const std::string& file)
+{
+    std::ifstream in(file);
+    if (!in) {
+        users.push_back(
+            UserFactory::createAdmin(
+                "admin",
+                "admin123",
+                UserProfile(30, 80, 180, Gender::Male)
+            )
+        );
+
+        return;
+    }
+    std::string type;
+    while (in >> type) {
+        if (type == "USER") {
+            std::string username, password;
+            int age;
+            double weight, height;
+            std::string genderText;
+            in >> username >> password >> age >> weight >> height >> genderText;
+
+            if (!isUsernameTaken(username)) {
+                Gender gender = EnumHelper::stringToGender(genderText);
+                UserProfile profile(age, weight, height, gender);
+                users.push_back(UserFactory::createTrainee(username, password, profile));
+            }
+        }
+        else if (type == "ADMIN") {
+            std::string username, password;
+            int age;
+            double weight, height;
+            std::string genderText;
+            in >> username >> password >> age >> weight >> height >> genderText;
+
+            if (!isUsernameTaken(username)) {
+                Gender gender = EnumHelper::stringToGender(genderText);
+                UserProfile profile(age, weight, height, gender);
+                users.push_back(UserFactory::createAdmin(username, password, profile));
+            }
+        }
+        else if (type == "FOOD") {
+            std::string name;
+            double calories, protein, carbs, fat;
+            in >> name >> calories >> protein >> carbs >> fat;
+
+            if (!findFood(name)) {
+                foods.push_back(std::make_shared<Food>(name, calories, protein, carbs, fat));
+            }
+        }
+        else if (type == "EXERCISE") {
+            std::string name;
+            double caloriesBurned;
+            std::string muscleGroupText;
+            in >> name >> caloriesBurned >> muscleGroupText;
+            
+            if (!findExercise(name)) {
+                MuscleGroup muscleGroup = EnumHelper::stringToMuscleGroup(muscleGroupText);
+                exercises.push_back(std::make_shared<Exercise>(name, caloriesBurned, muscleGroup));
+            }
+        }
+        else if (type == "FOOD_ENTRY")
+        {
+            std::string username, foodName;
+            double quantity;
+            int d, m, y;
+
+            in >> username >> foodName >> quantity >> d >> m >> y;
+
+            auto user = findUser(username);
+            auto trainee = std::dynamic_pointer_cast<Trainee>(user);
+            auto food = findFood(foodName);
+
+            if (trainee && food)
+            {
+                trainee->logFood(FoodEntry(food, quantity, Date(d, m, y)));
+            }
+        }
+        else if (type == "EXERCISE_ENTRY")
+        {
+            std::string username, exerciseName;
+            double duration;
+            int d, m, y;
+
+            in >> username >> exerciseName >> duration >> d >> m >> y;
+
+            auto user = findUser(username);
+            auto trainee = std::dynamic_pointer_cast<Trainee>(user);
+            auto exercise = findExercise(exerciseName);
+
+            if (trainee && exercise)
+            {
+                trainee->logExercise(ExerciseEntry(exercise, duration, Date(d, m, y)));
+            }
+        }
+        else if (type == "FAVORITE")
+        {
+            std::string username, exerciseName;
+
+            in >> username >> exerciseName;
+
+            auto user = findUser(username);
+            auto trainee = std::dynamic_pointer_cast<Trainee>(user);
+            auto exercise = findExercise(exerciseName);
+
+            if (trainee && exercise)
+            {
+                trainee->addToFavorites(exercise);
+            }
+        }
+        else if (type == "GOAL")
+        {
+            std::string username, goalText;
+            double target;
+
+            int sd, sm, sy;
+            int ed, em, ey;
+
+            in >> username
+                >> goalText
+                >> target
+                >> sd >> sm >> sy
+                >> ed >> em >> ey;
+
+            auto user = findUser(username);
+            auto trainee = std::dynamic_pointer_cast<Trainee>(user);
+
+            if (trainee)
+            {
+                trainee->setGoals(EnumHelper::stringToGoalType(goalText), target, Date(sd, sm, sy), Date(ed, em, ey));
+            }
+        }
+    }
+}
+
+void Calorix::saveToFile(const std::string& file)
+{
+    std::ofstream out(file);
+    if (!out) {
+        throw std::runtime_error("Cannot be open");
+    }
+
+    for (const auto& user : users) {
+        if (user->isAdmin()) {
+            out << "ADMIN ";
+        }
+        else {
+            out << "USER ";
+        }
+        UserProfile profile = user->getProfile();
+        out << user->getName()<<" "<<user->getPassword()<<" "<<profile.getAge()<<" "
+            <<profile.getWeight()<<" "<< profile.getHeight()<<" "<<EnumHelper::genderToString(profile.getGender())<<"\n";
+    }
+
+    for (const auto& food : foods) {
+        out << "FOOD " <<food->getName()<<" " << food->getCalories() << " " << food->getProtein() << " " << food->getCarbs() << " " << food->getFat() << "\n";
+    }
+    for (const auto& exercise : exercises) {
+        out << "EXERCISE " << exercise->getName() << " " << exercise->getCaloriesBurned() << " " << EnumHelper::muscleGroupToString(exercise->getMuscleGroup()) << "\n";
+    }
+    for (const auto& user : users) {
+        auto trainee = std::dynamic_pointer_cast<Trainee>(user);
+        if (!trainee) {
+            continue;
+        }
+        for (const auto& food : trainee->getFoods()) {
+            out << "FOOD_ENTRY " << user->getName() << " " <<
+                food.getFood()->getName() << " " << food.getQuantityGrams() << " " <<
+                food.getDate().getDay() << " " << food.getDate().getMonth() << " " << food.getDate().getYear() << "\n";
+        }
+        for (const auto& exercise : trainee->getExercises()) {
+            out << "EXERCISE_ENTRY " << user->getName() << " " <<
+                exercise.getExercise()->getName() << " " << exercise.getDuration() << " " <<
+                exercise.getDate().getDay() << " " << exercise.getDate().getMonth() << "" << exercise.getDate().getYear() << "\n";
+        }
+
+        for (const auto& favorite : trainee->getFavorites()) {
+            out << "FAVORITE" << " " << user->getName() << " "
+                << favorite->getName() << "\n";
+        }
+        for (const auto& goal : trainee->getGoals()) {
+            out << "GOAL " << user->getName() << " " <<
+                EnumHelper::goalTypeToString(goal.getGoalType()) << " " << goal.getTargetValue() << " " <<
+                goal.getStartDate().getDay() << " " << goal.getStartDate().getMonth() << " " << goal.getStartDate().getYear() << " " <<
+                goal.getEndDate().getDay() << " " << goal.getEndDate().getMonth() << " " << goal.getEndDate().getYear() << " " << goal.getIsAchieved()<<"\n";
+        }
+    }
 }
 

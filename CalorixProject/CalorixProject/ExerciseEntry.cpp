@@ -27,6 +27,11 @@ std::shared_ptr<Exercise> ExerciseEntry::getExercise() const
 	return exercise;
 }
 
+Date ExerciseEntry::getDate() const
+{
+    return date;
+}
+
 double ExerciseEntry::calculateBurnedCalories() const
 {
 	if (!exercise) return 0.0;

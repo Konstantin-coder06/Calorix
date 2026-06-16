@@ -27,7 +27,7 @@ public:
 	void logExercise(const ExerciseEntry& entry);
 
 	void viewDailySummary() const;
-	void viewProgress() const;
+	void viewProgress();
 	void viewFavorites() const;
 
 	double calculateBMI() const;
@@ -40,4 +40,9 @@ public:
 	bool isAdmin()const override;
 	double calculateTargetCalories() const;
 	void help()const override;
+
+	std::vector<FoodEntry> getFoods()const;
+	std::vector<ExerciseEntry>getExercises()const;
+	std::vector<FitnessGoal>getGoals()const;
+	std::vector<std::shared_ptr<Exercise>>getFavorites()const;
 };

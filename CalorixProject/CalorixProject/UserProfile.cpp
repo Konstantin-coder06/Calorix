@@ -1,7 +1,7 @@
 #include "UserProfile.h"
 #include <stdexcept>
 
-UserProfile::UserProfile(int age, double weight, double height, bool gender)
+UserProfile::UserProfile(int age, double weight, double height, const Gender& gender)
 {
     if (age <= 0) {
         throw std::invalid_argument("Age must be positive");
@@ -43,7 +43,7 @@ int UserProfile::getAge() const
 	return age;
 }
 
-bool UserProfile::getGender() const
+Gender UserProfile::getGender() const
 {
 	return gender;
 }

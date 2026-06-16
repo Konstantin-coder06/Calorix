@@ -69,3 +69,18 @@ void Date::IsCorrectStartEndDate(const Date& startDate, const Date& endDate)
 		}
 	}
 }
+
+int Date::getDay() const
+{
+	return day;
+}
+
+int Date::getMonth() const
+{
+	return month;
+}
+
+int Date::getYear() const
+{
+	return year;
+}

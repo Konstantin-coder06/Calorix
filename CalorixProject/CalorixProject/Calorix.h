@@ -28,7 +28,7 @@ public:
 	static Calorix& getInstance();
 
 	Calorix();
-	void registerUser(std::string username, std::string password, int age, double weight, double height, bool gender);
+	void registerUser(std::string username, std::string password, int age, double weight, double height,const Gender& gender);
 	bool isUsernameTaken(const std::string& name);
 	void login(std::string username, std::string password);
 	void logout();
@@ -49,7 +49,7 @@ public:
 	void addToFavorites(const std::string& exerciseName);
 
 	void viewDailySummary() const;
-	void viewProgress() const;
+	void viewProgress();
 
 	void calculateBMI() const;
 	void calculateBMR() const;
@@ -63,4 +63,7 @@ public:
 	bool isLoggedIn() const;
 	bool isCurrentUserAdmin() const;
 	bool isCurrentUserTrainee() const;
+
+	void loadFromFile(const std::string& file);
+	void saveToFile(const std::string& file);
 };

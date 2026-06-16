@@ -1,3 +1,16 @@
 ﻿  Scanning sources for module dependencies...
+  Calorix.cpp
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(174,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Calorix\CalorixProject\CalorixProject\Calorix.cpp(420,75): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   CalorixProject.cpp
+  Date.cpp
+  ExerciseEntry.cpp
+  FitnessGoal.cpp
+  FoodEntry.cpp
+  Trainee.cpp
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(133,33): warning C4805: '==': unsafe mix of type 'Gender' and type 'bool' in operation
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(152,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Calorix\CalorixProject\CalorixProject\Trainee.cpp(153,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  UserFactory.cpp
+  Generating Code...
   CalorixProject.vcxproj -> D:\Calorix\CalorixProject\x64\Debug\CalorixProject.exe
