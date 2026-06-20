@@ -129,7 +129,7 @@ int main()
                 std::cout << "3. Update food\n";
                 std::cout << "4. Block user\n";
                 std::cout << "Choice: ";
-                std::cin >> adminChoice;
+                adminChoice = readInt();
 
                 if (adminChoice == 1)
                 {
@@ -222,8 +222,9 @@ int main()
                 std::cout << "8. View favorites\n";
                 std::cout << "9. Generate workout plan\n";
                 std::cout << "10. Set goal\n";
+                std::cout << "11. Calculate target calories\n";
                 std::cout << "Choice: ";
-                std::cin >> traineeChoice;
+                traineeChoice = readInt();
 
                 if (traineeChoice == 1)
                 {
@@ -307,7 +308,7 @@ int main()
                     GoalType goalType = EnumHelper::stringToGoalType(goalText);
 
                     std::cout << "Target value:";
-                    int target = 0;
+                    double target = 0;
                     std::cin >> target;
 
                     int startDay = 0;
@@ -317,10 +318,10 @@ int main()
                     int endDay = 0;
                     int endMonth = 0;
                     int endYear = 0;
-                    std::cout << "Enter start day, montth and year\n";
+                    std::cout << "Enter start day, month and year\n";
                     std::cin >> startDay >> startMonth >> startYear;
                     
-                    std::cout << "Enter end day, montth and year\n";
+                    std::cout << "Enter end day, month and year\n";
                     std::cin >> endDay >> endMonth >> endYear;
                     
                     Date startDate(startDay, startMonth, startYear);
@@ -328,6 +329,9 @@ int main()
 
                     Date::IsCorrectStartEndDate(startDate, endDate);
                     calorix.setGoals(goalType, target, startDate, endDate);
+                }
+                else if (traineeChoice == 11) {
+                    calorix.calculateTargetCalories();
                 }
             }
             else if (choice == 6)

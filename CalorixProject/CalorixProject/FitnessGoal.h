@@ -8,7 +8,7 @@ class FitnessGoal {
 	Date endDate;
 	bool isAchieved;
 public:
-	FitnessGoal(GoalType goalType, double targetValue,Date startDate, Date endDate);
+	FitnessGoal(GoalType goalType, double targetValue, const Date& startDate, const Date& endDate);
 
 	GoalType getGoalType()const;
 	bool getIsAchieved() const;

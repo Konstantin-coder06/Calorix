@@ -48,6 +48,11 @@ Gender UserProfile::getGender() const
 	return gender;
 }
 
+Activity UserProfile::getActivityLevel() const
+{
+    return activityLevel;
+}
+
 void UserProfile::setWeight(double weight)
 {
 	if (weight <= 0) {

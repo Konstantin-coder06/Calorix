@@ -36,12 +36,9 @@ Calorix& Calorix::getInstance()
     return instance;
 }
 
-Calorix::Calorix()
-{
-  
-}
 
-void Calorix::registerUser(const std::string username, const std::string password, int age, double weight, double height,const Gender& gender)
+
+void Calorix::registerUser(const std::string& username, const std::string& password, int age, double weight, double height,const Gender& gender)
 {
     if (currentUser != nullptr) {
         throw std::runtime_error("You are already logged in");
@@ -91,10 +88,13 @@ void Calorix::logout()
 void Calorix::blockUser(std::string username)
 {
     requireAdmin();
+    if (username == currentUser->getName()) {
+        throw std::invalid_argument("Cannot block yourself");
+    }
     auto it = std::remove_if(users.begin(), users.end(), [&](const auto& user) {
         return user->getName() == username;
         });
-
+   
     if (it == users.end()) {
         throw std::invalid_argument("User not found");
     }
@@ -261,6 +261,15 @@ void Calorix::generateWorkoutPlan(int durationMinutes) const
     trainee->generateWorkoutPlan(exercises, durationMinutes);
 }
 
+void Calorix::calculateTargetCalories() const
+{
+    requireTrainee();
+
+    auto trainee = std::dynamic_pointer_cast<Trainee>(currentUser);
+
+    std::cout << "Target calories: " << trainee->calculateTargetCalories() << std::endl;
+}
+
 void Calorix::help() const
 {
     requireLogin();
@@ -289,6 +298,10 @@ bool Calorix::isCurrentUserTrainee() const
 
 void Calorix::loadFromFile(const std::string& file)
 {
+    users.clear();
+    foods.clear();
+    exercises.clear();
+    currentUser = nullptr;
     std::ifstream in(file);
     if (!in) {
         users.push_back(
@@ -388,7 +401,7 @@ void Calorix::loadFromFile(const std::string& file)
             std::string username, exerciseName;
 
             in >> username >> exerciseName;
-
+ 
             auto user = findUser(username);
             auto trainee = std::dynamic_pointer_cast<Trainee>(user);
             auto exercise = findExercise(exerciseName);
@@ -437,7 +450,7 @@ void Calorix::saveToFile(const std::string& file)
         else {
             out << "USER ";
         }
-        UserProfile profile = user->getProfile();
+        const UserProfile& profile = user->getProfile();
         out << user->getName()<<" "<<user->getPassword()<<" "<<profile.getAge()<<" "
             <<profile.getWeight()<<" "<< profile.getHeight()<<" "<<EnumHelper::genderToString(profile.getGender())<<"\n";
     }
@@ -461,7 +474,7 @@ void Calorix::saveToFile(const std::string& file)
         for (const auto& exercise : trainee->getExercises()) {
             out << "EXERCISE_ENTRY " << user->getName() << " " <<
                 exercise.getExercise()->getName() << " " << exercise.getDuration() << " " <<
-                exercise.getDate().getDay() << " " << exercise.getDate().getMonth() << "" << exercise.getDate().getYear() << "\n";
+                exercise.getDate().getDay() << " " << exercise.getDate().getMonth() << " " << exercise.getDate().getYear() << "\n";
         }
 
         for (const auto& favorite : trainee->getFavorites()) {
@@ -472,7 +485,7 @@ void Calorix::saveToFile(const std::string& file)
             out << "GOAL " << user->getName() << " " <<
                 EnumHelper::goalTypeToString(goal.getGoalType()) << " " << goal.getTargetValue() << " " <<
                 goal.getStartDate().getDay() << " " << goal.getStartDate().getMonth() << " " << goal.getStartDate().getYear() << " " <<
-                goal.getEndDate().getDay() << " " << goal.getEndDate().getMonth() << " " << goal.getEndDate().getYear() << " " << goal.getIsAchieved()<<"\n";
+                goal.getEndDate().getDay() << " " << goal.getEndDate().getMonth() << " " << goal.getEndDate().getYear()<<"\n";
         }
     }
 }

@@ -6,8 +6,11 @@
 #include <memory>
 #include "Date.h"
 #include "GoalType.h"
+#include <string>
+#include "Gender.h"
+#include "MuscleGroup.h"
 class Calorix {
-	char* name;
+	std::string name;
 
 	std::vector<std::shared_ptr<User>> users;
 	std::vector<std::shared_ptr<Food>> foods;
@@ -27,8 +30,8 @@ class Calorix {
 public:
 	static Calorix& getInstance();
 
-	Calorix();
-	void registerUser(std::string username, std::string password, int age, double weight, double height,const Gender& gender);
+	Calorix()=default;
+	void registerUser(const std::string&  username, const std::string& password, int age, double weight, double height,const Gender& gender);
 	bool isUsernameTaken(const std::string& name);
 	void login(std::string username, std::string password);
 	void logout();
@@ -56,6 +59,8 @@ public:
 	
 	void viewFavorites() const;
 	void generateWorkoutPlan(int durationMinutes) const;
+
+	void calculateTargetCalories() const;
 	
 	void help() const;
 	void end();
@@ -66,4 +71,7 @@ public:
 
 	void loadFromFile(const std::string& file);
 	void saveToFile(const std::string& file);
+
+	Calorix(const Calorix&) = delete;
+	Calorix& operator=(const Calorix&) = delete;
 };

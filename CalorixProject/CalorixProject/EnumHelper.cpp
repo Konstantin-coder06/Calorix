@@ -66,7 +66,7 @@ Activity EnumHelper::stringToActivity(const std::string& activity)
     if (activity == "Active") {
         return Activity::Active;
     }
-    if (activity == "Very active") {
+    if (activity == "Very Active") {
         return Activity::Very_Active;
     }
     throw std::invalid_argument("Invalid Activity");
@@ -94,7 +94,7 @@ GoalType EnumHelper::stringToGoalType(const std::string& goalType)
     if (goalType == "Bulking") {
         return GoalType::Bulking;
     }
-    if (goalType == "Maintanence") {
+    if (goalType == "Maintenance") {
         return GoalType::Maintenance;
     }
     throw std::invalid_argument("Invalid Goal Type");
@@ -106,7 +106,7 @@ std::string EnumHelper::goalTypeToString(const GoalType& goalType)
     switch (goalType) {
     case GoalType::WeightLoss: return "WeightLoss";break;
     case GoalType::Bulking:return "Bulking";break;
-    case GoalType::Maintenance:return "Maintanence";break;
+    case GoalType::Maintenance:return "Maintenance";break;
     default:return "Unknown";
     }
 }

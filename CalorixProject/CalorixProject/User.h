@@ -16,7 +16,7 @@ public:
 
 	std::string getName() const;
 	std::string getPassword() const;
-	UserProfile getProfile() const;
+	const UserProfile& getProfile() const;
 
 	virtual bool isAdmin()const = 0;
 };

@@ -1,4 +1,7 @@
 ADMIN admin admin123 30 80 180 Male
-USER pesho pesho 20 100 200 Male
-FOOD pizza 201 13 49 12
-FOOD_ENTRY pesho pizza 200 16 6 2026
+USER koce koce 20 104 197 Male
+FOOD Chicken 165 31 0 3.6
+EXERCISE BenchPress 400 Chest
+EXERCISE_ENTRY koce BenchPress 60 20 6 2026
+FAVORITE koce BenchPress
+GOAL koce Bulking 110 20 6 2026 20 8 2026

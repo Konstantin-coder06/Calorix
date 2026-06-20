@@ -15,7 +15,7 @@ public:
 	double getHeight() const;
 	int getAge() const;
 	Gender getGender() const;
-
+	Activity getActivityLevel()const;
 	void setWeight(double weight);
 	void setActivityLevel(Activity activity);
 };

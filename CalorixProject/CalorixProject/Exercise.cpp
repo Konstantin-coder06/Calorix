@@ -1,6 +1,6 @@
 #include "Exercise.h"
 #include <stdexcept>
-int Exercise::idCounter = 0;
+int Exercise::idCounter = 1;
 Exercise::Exercise(std::string name, double calBurn, MuscleGroup muscle):name(name),muscleGroup(muscle)
 {
 	if (calBurn <= 0) {

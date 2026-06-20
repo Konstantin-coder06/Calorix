@@ -18,7 +18,7 @@ std::string User::getPassword() const
 	return password;
 }
 
-UserProfile User::getProfile() const
+const UserProfile& User::getProfile() const
 {
 	return profile;
 }

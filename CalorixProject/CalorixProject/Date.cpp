@@ -11,6 +11,9 @@ Date::Date(int day, int month, int year)
 	this->year = year;
 }
 
+Date::Date():day(1), month(1), year(2000)
+{}
+
 bool Date::isValidDate(int day, int month, int year)
 {
 	if (year < 1) return false;

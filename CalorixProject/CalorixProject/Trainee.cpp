@@ -9,12 +9,13 @@
 #include <stdexcept>
 #include <vector>
 #include <memory>
+#include "Gender.h"
 Trainee::Trainee(std::string username, std::string password, UserProfile profile)
 	:User(username, password, profile)
 {
 }
 
-void Trainee::setGoals(GoalType goalType, int targetValue, Date startDate, Date deadline)
+void Trainee::setGoals(GoalType goalType, double targetValue, const Date& startDate, const Date& deadline)
 { 
 	if (targetValue <= 0) {
 		throw std::invalid_argument("Target must be positive");
@@ -34,26 +35,44 @@ void Trainee::logExercise(const ExerciseEntry& entry)
 
 void Trainee::viewDailySummary()const
 {
+	Date today = Date::getToday();
+
 	std::cout << "Your Daily Summary:" << std::endl;
+
 	double sumOfCalories = 0;
 	double sumOfProtein = 0;
 	double sumOfCarbs = 0;
 	double sumOfFat = 0;
 	double totalCaloriesOut = 0;
-	for (const auto& it : foodDiary) {
-		sumOfCalories += it.calculateCalories();
-		sumOfProtein += it.getFood()->getProtein() * it.getQuantityGrams() / 100;
-		sumOfCarbs += it.getFood()->getCarbs() * it.getQuantityGrams() / 100;
-		sumOfFat += it.getFood()->getFat() * it.getQuantityGrams() / 100;
-	}
-	for (const auto& entry : exerciseDiary)
-	{
-		totalCaloriesOut += entry.calculateBurnedCalories();
-	}
-	std::cout << "Total Calories: " << sumOfCalories << std::endl;
-	std::cout << "Calories burned:" << totalCaloriesOut << std::endl;
-	std::cout << "Net balance: " << sumOfCalories - totalCaloriesOut << std::endl;
 
+	for (const auto& it : foodDiary) {
+		Date entryDate = it.getDate();
+
+		if (entryDate.getDay() == today.getDay() &&
+			entryDate.getMonth() == today.getMonth() &&
+			entryDate.getYear() == today.getYear())
+		{
+			sumOfCalories += it.calculateCalories();
+			sumOfProtein += it.getFood()->getProtein() * it.getQuantityGrams() / 100;
+			sumOfCarbs += it.getFood()->getCarbs() * it.getQuantityGrams() / 100;
+			sumOfFat += it.getFood()->getFat() * it.getQuantityGrams() / 100;
+		}
+	}
+
+	for (const auto& entry : exerciseDiary) {
+		Date entryDate = entry.getDate();
+
+		if (entryDate.getDay() == today.getDay() &&
+			entryDate.getMonth() == today.getMonth() &&
+			entryDate.getYear() == today.getYear())
+		{
+			totalCaloriesOut += entry.calculateBurnedCalories();
+		}
+	}
+
+	std::cout << "Total Calories: " << sumOfCalories << std::endl;
+	std::cout << "Calories burned: " << totalCaloriesOut << std::endl;
+	std::cout << "Net balance: " << sumOfCalories - totalCaloriesOut << std::endl;
 	std::cout << "Protein: " << sumOfProtein << std::endl;
 	std::cout << "Carbs: " << sumOfCarbs << std::endl;
 	std::cout << "Fat: " << sumOfFat << std::endl;
@@ -111,7 +130,7 @@ void Trainee::viewProgress()
 
 double Trainee::calculateBMI() const
 {
-	UserProfile userProfile = getProfile();
+	const UserProfile& userProfile = getProfile();
 	double weight = userProfile.getWeight();
 	double height = userProfile.getHeight()/100;
 	if (height <= 0)
@@ -123,14 +142,14 @@ double Trainee::calculateBMI() const
 
 double Trainee::calculateBMR() const
 {
-	UserProfile userProfile = getProfile();
+	const UserProfile& userProfile = getProfile();
 
 	double weight = userProfile.getWeight();
 	double height = userProfile.getHeight();
 	double age = userProfile.getAge();
 	double bmr = 0;
 
-	if (userProfile.getGender() == true) {
+	if (userProfile.getGender() == Gender::Male) {
 
 		bmr = 10 * weight + 6.25 * height - 5 * age + 5;
 	}
@@ -143,7 +162,7 @@ double Trainee::calculateBMR() const
 
 void Trainee::generateWorkoutPlan(
 	const std::vector<std::shared_ptr<Exercise>>& exercises,
-	double duration)
+	double duration)const
 {
 	if (duration <= 0)
 	{
@@ -201,6 +220,11 @@ void Trainee::addToFavorites(std::shared_ptr<Exercise> exerciseName)
 	if (!exerciseName) {
 		throw std::invalid_argument("Exercise cannot be without name");
 	}
+	auto it = std::find(favoriteExercises.begin(), favoriteExercises.end(), exerciseName);
+
+	if (it != favoriteExercises.end()) {
+		throw std::invalid_argument("Exercise already in favorites");
+	}
 	favoriteExercises.push_back(exerciseName);
 }
 
@@ -234,27 +258,53 @@ void Trainee::help() const
 	std::cout << "add-to-favorites" << std::endl;
 	std::cout << "view-favorites" << std::endl;
 }
-std::vector<FoodEntry> Trainee::getFoods()const
+const std::vector<FoodEntry>& Trainee::getFoods()const
 {
 	return foodDiary;
 }
-std::vector<ExerciseEntry> Trainee::getExercises()const
+const std::vector<ExerciseEntry>& Trainee::getExercises()const
 {
 	return exerciseDiary;
 }
-std::vector<FitnessGoal> Trainee::getGoals()const
+const std::vector<FitnessGoal>& Trainee::getGoals()const
 {
 	return goals;
 }
-std::vector<std::shared_ptr<Exercise>> Trainee::getFavorites()const
+const std::vector<std::shared_ptr<Exercise>>& Trainee::getFavorites()const
 {
 	return favoriteExercises;
 }
 double Trainee::calculateTargetCalories() const
 {
-	if (goals.empty()) {
-		return calculateBMR();
+	double bmr = calculateBMR();
+	const UserProfile& profile = getProfile();
+
+	double multiplier = 1.2;
+
+	switch (profile.getActivityLevel()) {
+	case Activity::Sedentary:
+		multiplier = 1.2;
+		break;
+	case Activity::Light:
+		multiplier = 1.375;
+		break;
+	case Activity::Moderate:
+		multiplier = 1.55;
+		break;
+	case Activity::Active:
+		multiplier = 1.725;
+		break;
+	case Activity::Very_Active:
+		multiplier = 1.9;
+		break;
 	}
+
+	double maintenanceCalories = bmr * multiplier;
+
+	if (goals.empty()) {
+		return maintenanceCalories;
+	}
+
 
 	std::unique_ptr<GoalStrategy> strategy;
 

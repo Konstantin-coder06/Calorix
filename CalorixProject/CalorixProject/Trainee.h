@@ -21,7 +21,7 @@ public:
 		
 	Trainee() = default;
 
-	void setGoals(GoalType goalType, int targetValue,Date startDate, Date deadline);
+	void setGoals(GoalType goalType, double targetValue, const Date& startDate, const Date& deadline);
 
 	void logFood(const FoodEntry& entry);
 	void logExercise(const ExerciseEntry& entry);
@@ -33,7 +33,7 @@ public:
 	double calculateBMI() const;
 	double calculateBMR() const;
 
-	void generateWorkoutPlan(const std::vector<std::shared_ptr<Exercise>>& exercises, double durationMinutes);
+	void generateWorkoutPlan(const std::vector<std::shared_ptr<Exercise>>& exercises, double durationMinutes)const;
 
 	void addToFavorites(std::shared_ptr<Exercise> exerciseName);
 	
@@ -41,8 +41,8 @@ public:
 	double calculateTargetCalories() const;
 	void help()const override;
 
-	std::vector<FoodEntry> getFoods()const;
-	std::vector<ExerciseEntry>getExercises()const;
-	std::vector<FitnessGoal>getGoals()const;
-	std::vector<std::shared_ptr<Exercise>>getFavorites()const;
+	const std::vector<FoodEntry>& getFoods() const;
+	const std::vector<ExerciseEntry>& getExercises() const;
+	const std::vector<FitnessGoal>& getGoals() const;
+	const std::vector<std::shared_ptr<Exercise>>& getFavorites() const;
 };

@@ -12,12 +12,12 @@ public:
 	
 	FoodEntry() = default;
 	
-	FoodEntry(std::shared_ptr<Food> food, double quantityGrams,Date date);
+	FoodEntry(std::shared_ptr<Food> food, double quantityGrams, const Date& date);
 
 	std::shared_ptr<Food> getFood() const;
 	double getQuantityGrams()const;
 
-	bool isValidQuantity(double quantity);
+	static bool isValidQuantity(double quantity);
 	double calculateCalories()const;
 	Date getDate()const;
 };

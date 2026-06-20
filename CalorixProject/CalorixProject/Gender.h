@@ -1,5 +1,5 @@
 #pragma once
-enum Gender {
+enum class Gender {
 	Male,
 	Female
 };

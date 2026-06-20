@@ -2,6 +2,8 @@
 #include <memory>
 #include "Date.h"
 #include <stdexcept>
+int ExerciseEntry::idCounter = 1;
+
 ExerciseEntry::ExerciseEntry(
     std::shared_ptr<Exercise> exercise,
     double durationMinutes,
@@ -11,10 +13,14 @@ ExerciseEntry::ExerciseEntry(
    
     date(date)
 {
+    if (!exercise) {
+        throw std::invalid_argument("Exercise cannot be null");
+    }
     if (durationMinutes <= 0|| durationMinutes>120) {
         throw std::invalid_argument("Duration must be between the interval [1,120]");
     }
     this->durationMinutes = durationMinutes;
+    entryId = idCounter++;
 }
 
 double ExerciseEntry::getDuration() const

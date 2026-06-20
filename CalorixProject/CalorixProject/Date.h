@@ -5,9 +5,9 @@ class Date {
 	int year;
 public:
 	Date(int day, int month, int year);
-	Date() = default;
+	Date();
 	~Date() = default;
-	bool isValidDate(int day, int month, int year);
+	static bool isValidDate(int day, int month, int year);
 	static Date getToday();
 	static void IsCorrectStartEndDate(const Date& startDate, const Date& endDate);
 
